@@ -1,0 +1,17 @@
+{
+  "titulo": "MVP Timer",
+  "servidor": "Server",
+  "adicionar": "Log death",
+  "agora": "now",
+  "horario": "Time",
+  "resetar": "Reset",
+  "remover": "Remove",
+  "nasceEm": "spawns in",
+  "janelaAberta": "may spawn at any moment",
+  "atrasado": "already spawned — unseen",
+  "semTimer": "no timer",
+  "somAtivar": "Enable sound",
+  "somAtivo": "Sound on",
+  "apelido": "Your nickname",
+  "por": "by"
+}

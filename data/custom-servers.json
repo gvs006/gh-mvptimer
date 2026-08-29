@@ -1,0 +1,18 @@
+{
+  "_comment": "Ajustes por servidor. Servidor privado customiza respawn e às vezes solta MVP que no jogo oficial é de instância — é o caso do Nidhoggr aqui. O catálogo base nunca é editado à mão: o que muda de servidor para servidor mora neste arquivo, e o build-catalog aplica por cima.",
+  "servers": [
+    {
+      "id": "ragnabeat",
+      "label": "Ragnabeat",
+      "mode": "pre-re",
+      "overrides": [
+        {
+          "id": 2022,
+          "namePtBr": "Sombra de Nidhogg",
+          "respawn": [{ "map": "nyd_dun02", "cdr": 14400000, "max_delay": 0 }],
+          "_nota": "Custom deste servidor: 4h fixas. No rAthena oficial o 2022 é de instância e não tem respawn livre."
+        }
+      ]
+    }
+  ]
+}

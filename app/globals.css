@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-fundo: #0e0f16;
+  --color-painel: #171923;
+  --color-painel-alto: #1e2130;
+  --color-borda: #2a2e40;
+  --color-texto: #e8eaf2;
+  --color-suave: #8d94ad;
+
+  /* As quatro fases. Cor é reforço, nunca o único sinal — todo card também traz
+     ícone e rótulo em texto, senão daltônico não distingue urgência de espera. */
+  --color-contando: #5b9bd5;
+  --color-iminente: #e0a83c;
+  --color-janela: #e05c5c;
+  --color-atrasado: #b23b3b;
+}
+
+html { color-scheme: dark; }
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, #1a1d2b 0%, transparent 70%),
+    var(--color-fundo);
+  color: var(--color-texto);
+  min-height: 100dvh;
+}
+
+/* Pulso só no estado que exige ação imediata. Em card parado vira ruído, e a
+   mídia de movimento reduzido desliga tudo. */
+@keyframes pulso {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.pulsa { animation: pulso 1.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pulsa { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}

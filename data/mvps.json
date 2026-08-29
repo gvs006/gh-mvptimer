@@ -1,0 +1,3360 @@
+{
+  "pre-re": [
+    {
+      "id": 1038,
+      "aegis": "OSIRIS",
+      "name": "Osiris",
+      "namePtBr": "Osíris",
+      "level": 78,
+      "hp": 415400,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "moc_pryd04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1039,
+      "aegis": "BAPHOMET",
+      "name": "Baphomet",
+      "namePtBr": "Bafomé",
+      "level": 81,
+      "hp": 668000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "prt_maze03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1046,
+      "aegis": "DOPPELGANGER",
+      "name": "Doppelganger",
+      "namePtBr": null,
+      "level": 72,
+      "hp": 249000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gef_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        },
+        {
+          "map": "gld_dun02",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "aegis": "MISTRESS",
+      "name": "Mistress",
+      "namePtBr": "Abelha-Rainha",
+      "level": 74,
+      "hp": 212000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "mjolnir_04",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1086,
+      "aegis": "GOLDEN_BUG",
+      "name": "Golden Thief Bug",
+      "namePtBr": "Besouro-Ladrão Dourado",
+      "level": 64,
+      "hp": 126000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "prt_sewb4",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1087,
+      "aegis": "ORK_HERO",
+      "name": "Orc Hero",
+      "namePtBr": "Orc Herói",
+      "level": 77,
+      "hp": 585700,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gef_fild02",
+          "respawnMinMinutes": 1440,
+          "respawnMaxMinutes": 1450
+        },
+        {
+          "map": "gef_fild14",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1112,
+      "aegis": "DRAKE",
+      "name": "Drake",
+      "namePtBr": null,
+      "level": 70,
+      "hp": 326666,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "treasure02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1115,
+      "aegis": "EDDGA",
+      "name": "Eddga",
+      "namePtBr": null,
+      "level": 65,
+      "hp": 152000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gld_dun01",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "pay_fild11",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1147,
+      "aegis": "MAYA",
+      "name": "Maya",
+      "namePtBr": null,
+      "level": 81,
+      "hp": 169000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "anthell02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        },
+        {
+          "map": "gld_dun03",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1150,
+      "aegis": "MOONLIGHT",
+      "name": "Moonlight Flower",
+      "namePtBr": "Flor do Luar",
+      "level": 67,
+      "hp": 120000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "pay_dun04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1157,
+      "aegis": "PHARAOH",
+      "name": "Pharaoh",
+      "namePtBr": "Faraó",
+      "level": 93,
+      "hp": 445997,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "in_sphinx5",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1159,
+      "aegis": "PHREEONI",
+      "name": "Phreeoni",
+      "namePtBr": "Freeoni",
+      "level": 69,
+      "hp": 188000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "moc_fild17",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1190,
+      "aegis": "ORC_LORD",
+      "name": "Orc Lord",
+      "namePtBr": "Senhor dos Orcs",
+      "level": 74,
+      "hp": 783000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gef_fild10",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1251,
+      "aegis": "KNIGHT_OF_WINDSTORM",
+      "name": "Stormy Knight",
+      "namePtBr": "Cavaleiro Tempestuoso",
+      "level": 77,
+      "hp": 240000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "xmas_dun02",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1252,
+      "aegis": "GARM",
+      "name": "Hatii",
+      "namePtBr": null,
+      "level": 73,
+      "hp": 197000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "xmas_fild01",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1272,
+      "aegis": "DARK_LORD",
+      "name": "Dark Lord",
+      "namePtBr": "Senhor das Trevas",
+      "level": 80,
+      "hp": 720000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gl_chyard",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        },
+        {
+          "map": "gld_dun04",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1312,
+      "aegis": "TURTLE_GENERAL",
+      "name": "Turtle General",
+      "namePtBr": "General Tartaruga",
+      "level": 97,
+      "hp": 320700,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "tur_dun04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1373,
+      "aegis": "LORD_OF_DEATH",
+      "name": "Lord of the Dead",
+      "namePtBr": "Senhor dos Mortos",
+      "level": 94,
+      "hp": 603383,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1389,
+      "aegis": "DRACULA",
+      "name": "Dracula",
+      "namePtBr": "Drácula",
+      "level": 85,
+      "hp": 320096,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gef_dun01",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1399,
+      "aegis": "EVENT_BAPHO",
+      "name": "Baphomet",
+      "namePtBr": "Bafomé",
+      "level": 68,
+      "hp": 1264000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1418,
+      "aegis": "DARK_SNAKE_LORD",
+      "name": "Evil Snake Lord",
+      "namePtBr": "Serpente Suprema",
+      "level": 73,
+      "hp": 254993,
+      "respawnMinMinutes": 94.16666666666667,
+      "respawnMaxMinutes": 104.16666666666667,
+      "spawns": [
+        {
+          "map": "gon_dun03",
+          "respawnMinMinutes": 94.16666666666667,
+          "respawnMaxMinutes": 104.16666666666667
+        }
+      ]
+    },
+    {
+      "id": 1492,
+      "aegis": "INCANTATION_SAMURAI",
+      "name": "Samurai Specter",
+      "namePtBr": "Samurai Encarnado",
+      "level": 71,
+      "hp": 218652,
+      "respawnMinMinutes": 91,
+      "respawnMaxMinutes": 101,
+      "spawns": [
+        {
+          "map": "ama_dun03",
+          "respawnMinMinutes": 91,
+          "respawnMaxMinutes": 101
+        }
+      ]
+    },
+    {
+      "id": 1502,
+      "aegis": "PORING_V",
+      "name": "Bring it on!",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 95000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1511,
+      "aegis": "AMON_RA",
+      "name": "Amon Ra",
+      "namePtBr": null,
+      "level": 88,
+      "hp": 1214138,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "moc_pryd06",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1583,
+      "aegis": "TAO_GUNKA",
+      "name": "Tao Gunka",
+      "namePtBr": null,
+      "level": 70,
+      "hp": 193000,
+      "respawnMinMinutes": 300,
+      "respawnMaxMinutes": 310,
+      "spawns": [
+        {
+          "map": "beach_dun",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        }
+      ]
+    },
+    {
+      "id": 1623,
+      "aegis": "RSX_0806",
+      "name": "RSX-0806",
+      "namePtBr": null,
+      "level": 86,
+      "hp": 560733,
+      "respawnMinMinutes": 125,
+      "respawnMaxMinutes": 135,
+      "spawns": [
+        {
+          "map": "ein_dun02",
+          "respawnMinMinutes": 125,
+          "respawnMaxMinutes": 135
+        }
+      ]
+    },
+    {
+      "id": 1630,
+      "aegis": "BACSOJIN_",
+      "name": "White Lady",
+      "namePtBr": "Lady Branca",
+      "level": 85,
+      "hp": 253221,
+      "respawnMinMinutes": 116.66666666666667,
+      "respawnMaxMinutes": 126.66666666666667,
+      "spawns": [
+        {
+          "map": "lou_dun03",
+          "respawnMinMinutes": 116.66666666666667,
+          "respawnMaxMinutes": 126.66666666666667
+        }
+      ]
+    },
+    {
+      "id": 1646,
+      "aegis": "B_SEYREN",
+      "name": "Lord Knight Seyren",
+      "namePtBr": "Lorde Seyren",
+      "level": 99,
+      "hp": 1647590,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1647,
+      "aegis": "B_EREMES",
+      "name": "Assassin Cross Eremes",
+      "namePtBr": "Algoz Eremes",
+      "level": 99,
+      "hp": 1411230,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1648,
+      "aegis": "B_HARWORD",
+      "name": "Whitesmith Howard",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 1460000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1649,
+      "aegis": "B_MAGALETA",
+      "name": "High Priest Margaretha",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 1092910,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1650,
+      "aegis": "B_SHECIL",
+      "name": "Sniper Cecil",
+      "namePtBr": "Atirador de Elite Cecil",
+      "level": 99,
+      "hp": 1349000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1651,
+      "aegis": "B_KATRINN",
+      "name": "High Wizard Kathryne",
+      "namePtBr": "Arquimaga Kathryne",
+      "level": 99,
+      "hp": 1069920,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1658,
+      "aegis": "B_YGNIZEM",
+      "name": "Egnigem Cenia",
+      "namePtBr": null,
+      "level": 79,
+      "hp": 214200,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "lhz_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1685,
+      "aegis": "APOCALIPS_H",
+      "name": "Vesper",
+      "namePtBr": null,
+      "level": 97,
+      "hp": 640700,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "jupe_core",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1688,
+      "aegis": "LADY_TANEE",
+      "name": "Lady Tanee",
+      "namePtBr": null,
+      "level": 89,
+      "hp": 493000,
+      "respawnMinMinutes": 420,
+      "respawnMaxMinutes": 430,
+      "spawns": [
+        {
+          "map": "ayo_dun02",
+          "respawnMinMinutes": 420,
+          "respawnMaxMinutes": 430
+        }
+      ]
+    },
+    {
+      "id": 1708,
+      "aegis": "THANATOS",
+      "name": "Memory of Thanatos",
+      "namePtBr": "Memória de Thanatos",
+      "level": 99,
+      "hp": 445660,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1719,
+      "aegis": "DETALE",
+      "name": "Detardeurus",
+      "namePtBr": null,
+      "level": 90,
+      "hp": 960000,
+      "respawnMinMinutes": 180,
+      "respawnMaxMinutes": 190,
+      "spawns": [
+        {
+          "map": "abyss_03",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        }
+      ]
+    },
+    {
+      "id": 1734,
+      "aegis": "KIEL_",
+      "name": "Kiel D-01",
+      "namePtBr": null,
+      "level": 90,
+      "hp": 1523000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 180,
+      "spawns": [
+        {
+          "map": "kh_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 180
+        }
+      ]
+    },
+    {
+      "id": 1751,
+      "aegis": "RANDGRIS",
+      "name": "Valkyrie Randgris",
+      "namePtBr": "Valquíria Randgris",
+      "level": 99,
+      "hp": 3567200,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "odin_tem03",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1766,
+      "aegis": "EM_ANGELING",
+      "name": "Angeling",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 128430,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1767,
+      "aegis": "EM_DEVILING",
+      "name": "Deviling",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 128430,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1768,
+      "aegis": "GLOOMUNDERNIGHT",
+      "name": "Gloom Under Night",
+      "namePtBr": "Pesar Noturno",
+      "level": 89,
+      "hp": 2298000,
+      "respawnMinMinutes": 300,
+      "respawnMaxMinutes": 310,
+      "spawns": [
+        {
+          "map": "ra_san05",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        }
+      ]
+    },
+    {
+      "id": 1779,
+      "aegis": "KTULLANUX",
+      "name": "Ktullanux",
+      "namePtBr": null,
+      "level": 98,
+      "hp": 4417000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1785,
+      "aegis": "ATROCE",
+      "name": "Atroce",
+      "namePtBr": null,
+      "level": 82,
+      "hp": 1008420,
+      "respawnMinMinutes": 180,
+      "respawnMaxMinutes": 190,
+      "spawns": [
+        {
+          "map": "ra_fild02",
+          "respawnMinMinutes": 240,
+          "respawnMaxMinutes": 250
+        },
+        {
+          "map": "ra_fild03",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        },
+        {
+          "map": "ra_fild04",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        },
+        {
+          "map": "ve_fild01",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        },
+        {
+          "map": "ve_fild02",
+          "respawnMinMinutes": 360,
+          "respawnMaxMinutes": 370
+        }
+      ]
+    },
+    {
+      "id": 1832,
+      "aegis": "IFRIT",
+      "name": "Ifrit",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 7700000,
+      "respawnMinMinutes": 660,
+      "respawnMaxMinutes": 670,
+      "spawns": [
+        {
+          "map": "thor_v03",
+          "respawnMinMinutes": 660,
+          "respawnMaxMinutes": 670
+        }
+      ]
+    },
+    {
+      "id": 1871,
+      "aegis": "FALLINGBISHOP",
+      "name": "Fallen Bishop Hibram",
+      "namePtBr": null,
+      "level": 80,
+      "hp": 3333333,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "abbey02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1874,
+      "aegis": "BEELZEBUB_",
+      "name": "Beelzebub",
+      "namePtBr": "Belzebu",
+      "level": 98,
+      "hp": 6666666,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1885,
+      "aegis": "GOPINICH",
+      "name": "Gopinich",
+      "namePtBr": "Gorynych",
+      "level": 85,
+      "hp": 299321,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "mosk_dun03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1917,
+      "aegis": "MOROCC_",
+      "name": "Wounded Morocc",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 8388607,
+      "respawnMinMinutes": 720,
+      "respawnMaxMinutes": 780,
+      "spawns": [
+        {
+          "map": "moc_fild22",
+          "respawnMinMinutes": 720,
+          "respawnMaxMinutes": 780
+        }
+      ]
+    },
+    {
+      "id": 1980,
+      "aegis": "KUBLIN",
+      "name": "Kublin",
+      "namePtBr": null,
+      "level": 85,
+      "hp": 1176000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2022,
+      "aegis": "S_NYDHOG",
+      "name": "Nidhoggr's Shadow",
+      "namePtBr": null,
+      "level": 117,
+      "hp": 3450000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2068,
+      "aegis": "BOITATA",
+      "name": "Boitata",
+      "namePtBr": "Boitatá",
+      "level": 93,
+      "hp": 1283990,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "bra_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    }
+  ],
+  "re": [
+    {
+      "id": 1038,
+      "aegis": "OSIRIS",
+      "name": "Osiris",
+      "namePtBr": "Osíris",
+      "level": 68,
+      "hp": 1175840,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "moc_pryd04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1039,
+      "aegis": "BAPHOMET",
+      "name": "Baphomet",
+      "namePtBr": "Bafomé",
+      "level": 81,
+      "hp": 668000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gld_dun03",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "prt_maze03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1046,
+      "aegis": "DOPPELGANGER",
+      "name": "Doppelganger",
+      "namePtBr": null,
+      "level": 77,
+      "hp": 380000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gef_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        },
+        {
+          "map": "gld_dun04",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "aegis": "MISTRESS",
+      "name": "Mistress",
+      "namePtBr": "Abelha-Rainha",
+      "level": 78,
+      "hp": 378000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gld_dun02",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "mjolnir_04",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1086,
+      "aegis": "GOLDEN_BUG",
+      "name": "Golden Thief Bug",
+      "namePtBr": "Besouro-Ladrão Dourado",
+      "level": 65,
+      "hp": 222750,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "prt_sewb4",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1087,
+      "aegis": "ORK_HERO",
+      "name": "Orc Hero",
+      "namePtBr": "Orc Herói",
+      "level": 50,
+      "hp": 362000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gef_fild03",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1112,
+      "aegis": "DRAKE",
+      "name": "Drake",
+      "namePtBr": null,
+      "level": 91,
+      "hp": 804500,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "treasure02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1115,
+      "aegis": "EDDGA",
+      "name": "Eddga",
+      "namePtBr": null,
+      "level": 65,
+      "hp": 947500,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gld_dun01_2",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "pay_fild10",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1147,
+      "aegis": "MAYA",
+      "name": "Maya",
+      "namePtBr": null,
+      "level": 55,
+      "hp": 380000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "anthell02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        },
+        {
+          "map": "gld_dun02_2",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1150,
+      "aegis": "MOONLIGHT",
+      "name": "Moonlight Flower",
+      "namePtBr": "Flor do Luar",
+      "level": 79,
+      "hp": 324000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gld_dun01",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "pay_dun04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1157,
+      "aegis": "PHARAOH",
+      "name": "Pharaoh",
+      "namePtBr": "Faraó",
+      "level": 85,
+      "hp": 900000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "in_sphinx5",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1159,
+      "aegis": "PHREEONI",
+      "name": "Phreeoni",
+      "namePtBr": "Freeoni",
+      "level": 71,
+      "hp": 300000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "moc_fild17",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1190,
+      "aegis": "ORC_LORD",
+      "name": "Orc Lord",
+      "namePtBr": "Senhor dos Orcs",
+      "level": 55,
+      "hp": 552000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gef_fild10",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1251,
+      "aegis": "KNIGHT_OF_WINDSTORM",
+      "name": "Stormy Knight",
+      "namePtBr": "Cavaleiro Tempestuoso",
+      "level": 92,
+      "hp": 630500,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "xmas_dun02",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1252,
+      "aegis": "GARM",
+      "name": "Hatii",
+      "namePtBr": null,
+      "level": 98,
+      "hp": 1275500,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "xmas_fild01",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1272,
+      "aegis": "DARK_LORD",
+      "name": "Dark Lord",
+      "namePtBr": "Senhor das Trevas",
+      "level": 96,
+      "hp": 1190900,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gl_chyard",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        },
+        {
+          "map": "gl_chyard_",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        },
+        {
+          "map": "gld_dun04_2",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1312,
+      "aegis": "TURTLE_GENERAL",
+      "name": "Turtle General",
+      "namePtBr": "General Tartaruga",
+      "level": 110,
+      "hp": 1442000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "tur_dun04",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1373,
+      "aegis": "LORD_OF_DEATH",
+      "name": "Lord of the Dead",
+      "namePtBr": "Senhor dos Mortos",
+      "level": 94,
+      "hp": 603883,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1389,
+      "aegis": "DRACULA",
+      "name": "Dracula",
+      "namePtBr": "Drácula",
+      "level": 75,
+      "hp": 350000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gef_dun01",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1399,
+      "aegis": "EVENT_BAPHO",
+      "name": "Baphomet",
+      "namePtBr": "Bafomé",
+      "level": 68,
+      "hp": 1264000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1418,
+      "aegis": "DARK_SNAKE_LORD",
+      "name": "Evil Snake Lord",
+      "namePtBr": "Serpente Suprema",
+      "level": 105,
+      "hp": 1101000,
+      "respawnMinMinutes": 94.16666666666667,
+      "respawnMaxMinutes": 104.16666666666667,
+      "spawns": [
+        {
+          "map": "gon_dun03",
+          "respawnMinMinutes": 94.16666666666667,
+          "respawnMaxMinutes": 104.16666666666667
+        }
+      ]
+    },
+    {
+      "id": 1492,
+      "aegis": "INCANTATION_SAMURAI",
+      "name": "Samurai Specter",
+      "namePtBr": "Samurai Encarnado",
+      "level": 100,
+      "hp": 901000,
+      "respawnMinMinutes": 91,
+      "respawnMaxMinutes": 101,
+      "spawns": [
+        {
+          "map": "ama_dun03",
+          "respawnMinMinutes": 91,
+          "respawnMaxMinutes": 101
+        }
+      ]
+    },
+    {
+      "id": 1502,
+      "aegis": "PORING_V",
+      "name": "Bring it on!",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 95000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1511,
+      "aegis": "AMON_RA",
+      "name": "Amon Ra",
+      "namePtBr": null,
+      "level": 69,
+      "hp": 1009000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "moc_pryd06",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 1518,
+      "aegis": "BACSOJIN",
+      "name": "White Lady",
+      "namePtBr": "Lady Branca",
+      "level": 97,
+      "hp": 720500,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1583,
+      "aegis": "TAO_GUNKA",
+      "name": "Tao Gunka",
+      "namePtBr": null,
+      "level": 110,
+      "hp": 1252000,
+      "respawnMinMinutes": 300,
+      "respawnMaxMinutes": 310,
+      "spawns": [
+        {
+          "map": "beach_dun",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        }
+      ]
+    },
+    {
+      "id": 1623,
+      "aegis": "RSX_0806",
+      "name": "RSX-0806",
+      "namePtBr": null,
+      "level": 100,
+      "hp": 1001000,
+      "respawnMinMinutes": 125,
+      "respawnMaxMinutes": 135,
+      "spawns": [
+        {
+          "map": "ein_dun02",
+          "respawnMinMinutes": 125,
+          "respawnMaxMinutes": 135
+        }
+      ]
+    },
+    {
+      "id": 1630,
+      "aegis": "BACSOJIN_",
+      "name": "White Lady",
+      "namePtBr": "Lady Branca",
+      "level": 97,
+      "hp": 720500,
+      "respawnMinMinutes": 116.66666666666667,
+      "respawnMaxMinutes": 126.66666666666667,
+      "spawns": [
+        {
+          "map": "lou_dun03",
+          "respawnMinMinutes": 116.66666666666667,
+          "respawnMaxMinutes": 126.66666666666667
+        }
+      ]
+    },
+    {
+      "id": 1646,
+      "aegis": "B_SEYREN",
+      "name": "Lord Knight Seyren",
+      "namePtBr": "Lorde Seyren",
+      "level": 160,
+      "hp": 4680000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1647,
+      "aegis": "B_EREMES",
+      "name": "Assassin Cross Eremes",
+      "namePtBr": "Algoz Eremes",
+      "level": 160,
+      "hp": 4230000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1648,
+      "aegis": "B_HARWORD",
+      "name": "Whitesmith Howard",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 6750000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1649,
+      "aegis": "B_MAGALETA",
+      "name": "High Priest Margaretha",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4800000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1650,
+      "aegis": "B_SHECIL",
+      "name": "Sniper Cecil",
+      "namePtBr": "Atirador de Elite Cecil",
+      "level": 160,
+      "hp": 4140000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1651,
+      "aegis": "B_KATRINN",
+      "name": "High Wizard Kathryne",
+      "namePtBr": "Arquimaga Kathryne",
+      "level": 160,
+      "hp": 4500000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1658,
+      "aegis": "B_YGNIZEM",
+      "name": "Egnigem Cenia",
+      "namePtBr": null,
+      "level": 141,
+      "hp": 2910088,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "lhz_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1685,
+      "aegis": "APOCALIPS_H",
+      "name": "Vesper",
+      "namePtBr": null,
+      "level": 128,
+      "hp": 3802000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "jupe_core",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1688,
+      "aegis": "LADY_TANEE",
+      "name": "Lady Tanee",
+      "namePtBr": null,
+      "level": 80,
+      "hp": 360000,
+      "respawnMinMinutes": 420,
+      "respawnMaxMinutes": 430,
+      "spawns": [
+        {
+          "map": "ayo_dun02",
+          "respawnMinMinutes": 420,
+          "respawnMaxMinutes": 430
+        }
+      ]
+    },
+    {
+      "id": 1708,
+      "aegis": "THANATOS",
+      "name": "Thanatos Phantom",
+      "namePtBr": "Memória de Thanatos",
+      "level": 99,
+      "hp": 1445660,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1719,
+      "aegis": "DETALE",
+      "name": "Detardeurus",
+      "namePtBr": null,
+      "level": 135,
+      "hp": 6005000,
+      "respawnMinMinutes": 180,
+      "respawnMaxMinutes": 190,
+      "spawns": [
+        {
+          "map": "abyss_03",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        }
+      ]
+    },
+    {
+      "id": 1734,
+      "aegis": "KIEL_",
+      "name": "Kiel D-01",
+      "namePtBr": null,
+      "level": 125,
+      "hp": 2502000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "kh_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1751,
+      "aegis": "RANDGRIS",
+      "name": "Valkyrie Randgris",
+      "namePtBr": "Valquíria Randgris",
+      "level": 141,
+      "hp": 3205000,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "odin_tem03",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 1766,
+      "aegis": "EM_ANGELING",
+      "name": "Angeling",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 128430,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1767,
+      "aegis": "EM_DEVILING",
+      "name": "Deviling",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 128430,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1768,
+      "aegis": "GLOOMUNDERNIGHT",
+      "name": "Gloom Under Night",
+      "namePtBr": "Pesar Noturno",
+      "level": 139,
+      "hp": 3005000,
+      "respawnMinMinutes": 300,
+      "respawnMaxMinutes": 310,
+      "spawns": [
+        {
+          "map": "ra_san05",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        }
+      ]
+    },
+    {
+      "id": 1779,
+      "aegis": "KTULLANUX",
+      "name": "Ktullanux",
+      "namePtBr": null,
+      "level": 98,
+      "hp": 2626000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1785,
+      "aegis": "ATROCE",
+      "name": "Atroce",
+      "namePtBr": null,
+      "level": 113,
+      "hp": 1502000,
+      "respawnMinMinutes": 180,
+      "respawnMaxMinutes": 190,
+      "spawns": [
+        {
+          "map": "gld_dun03_2",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        },
+        {
+          "map": "ra_fild03",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        },
+        {
+          "map": "ra_fild04",
+          "respawnMinMinutes": 300,
+          "respawnMaxMinutes": 310
+        },
+        {
+          "map": "ve_fild01",
+          "respawnMinMinutes": 180,
+          "respawnMaxMinutes": 190
+        },
+        {
+          "map": "ve_fild02",
+          "respawnMinMinutes": 360,
+          "respawnMaxMinutes": 370
+        }
+      ]
+    },
+    {
+      "id": 1813,
+      "aegis": "EVENT_HYDRO",
+      "name": "Hydrolancer",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 1880000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1817,
+      "aegis": "EVENT_DETALE",
+      "name": "Detardeurus",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 8880000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1832,
+      "aegis": "IFRIT",
+      "name": "Ifrit",
+      "namePtBr": null,
+      "level": 146,
+      "hp": 6935000,
+      "respawnMinMinutes": 660,
+      "respawnMaxMinutes": 670,
+      "spawns": [
+        {
+          "map": "thor_v03",
+          "respawnMinMinutes": 660,
+          "respawnMaxMinutes": 670
+        }
+      ]
+    },
+    {
+      "id": 1871,
+      "aegis": "FALLINGBISHOP",
+      "name": "Falling Bishop",
+      "namePtBr": null,
+      "level": 138,
+      "hp": 5655000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "abbey02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1874,
+      "aegis": "BEELZEBUB_",
+      "name": "Beelzebub",
+      "namePtBr": "Belzebu",
+      "level": 147,
+      "hp": 4805000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1876,
+      "aegis": "E_LORD_OF_DEATH",
+      "name": "Lord of the Dead",
+      "namePtBr": "Senhor dos Mortos",
+      "level": 99,
+      "hp": 99000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1885,
+      "aegis": "GOPINICH",
+      "name": "Gopinich",
+      "namePtBr": "Gorynych",
+      "level": 97,
+      "hp": 1120500,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "mosk_dun03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 1917,
+      "aegis": "MOROCC_",
+      "name": "Wounded Morocc",
+      "namePtBr": null,
+      "level": 151,
+      "hp": 5000000,
+      "respawnMinMinutes": 720,
+      "respawnMaxMinutes": 730,
+      "spawns": [
+        {
+          "map": "moc_fild22",
+          "respawnMinMinutes": 720,
+          "respawnMaxMinutes": 730
+        }
+      ]
+    },
+    {
+      "id": 1956,
+      "aegis": "NAGHT_SIEGER",
+      "name": "Naght Sieger",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 5000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1957,
+      "aegis": "ENTWEIHEN",
+      "name": "Entweihen Crothen",
+      "namePtBr": null,
+      "level": 90,
+      "hp": 2400500,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 1980,
+      "aegis": "KUBLIN",
+      "name": "Kublin",
+      "namePtBr": null,
+      "level": 85,
+      "hp": 633600,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2022,
+      "aegis": "S_NYDHOG",
+      "name": "Nidhoggur's Shadow",
+      "namePtBr": null,
+      "level": 117,
+      "hp": 3452000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2052,
+      "aegis": "E_DARKLORD",
+      "name": "Dark Lord",
+      "namePtBr": null,
+      "level": 96,
+      "hp": 100000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2068,
+      "aegis": "BOITATA",
+      "name": "Boitata",
+      "namePtBr": "Boitatá",
+      "level": 93,
+      "hp": 1283990,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "bra_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 2075,
+      "aegis": "E_VADON_X",
+      "name": "Ragunta",
+      "namePtBr": null,
+      "level": 1,
+      "hp": 300,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2087,
+      "aegis": "QUEEN_SCARABA",
+      "name": "Scaraba Queen",
+      "namePtBr": null,
+      "level": 140,
+      "hp": 2441600,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 120,
+      "spawns": [
+        {
+          "map": "dic_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": 2094,
+      "aegis": "E_ORK_HERO2",
+      "name": "Orc Hero",
+      "namePtBr": null,
+      "level": 50,
+      "hp": 362000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2095,
+      "aegis": "E_EDDGA",
+      "name": "Eddga",
+      "namePtBr": null,
+      "level": 65,
+      "hp": 947500,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2096,
+      "aegis": "E_OSIRIS2",
+      "name": "Osiris",
+      "namePtBr": null,
+      "level": 68,
+      "hp": 475840,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2097,
+      "aegis": "E_DRACULA",
+      "name": "Dracula",
+      "namePtBr": null,
+      "level": 75,
+      "hp": 350000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2098,
+      "aegis": "E_DOPPELGANGER",
+      "name": "Doppelganger",
+      "namePtBr": null,
+      "level": 77,
+      "hp": 380000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2099,
+      "aegis": "E_MISTRESS",
+      "name": "Mistress",
+      "namePtBr": null,
+      "level": 78,
+      "hp": 378000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2100,
+      "aegis": "E_BAPHOMET2",
+      "name": "Baphomet",
+      "namePtBr": null,
+      "level": 81,
+      "hp": 668000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2101,
+      "aegis": "E_LORD_OF_DEATH2",
+      "name": "Lord of the Dead",
+      "namePtBr": null,
+      "level": 94,
+      "hp": 603883,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2102,
+      "aegis": "E_DARK_LORD",
+      "name": "Dark Lord",
+      "namePtBr": null,
+      "level": 96,
+      "hp": 1190900,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2103,
+      "aegis": "E_KTULLANUX",
+      "name": "Ktullanux",
+      "namePtBr": null,
+      "level": 98,
+      "hp": 2626000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2104,
+      "aegis": "E_DARK_SNAKE_LORD",
+      "name": "Evil Snake Lord",
+      "namePtBr": null,
+      "level": 105,
+      "hp": 1101000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2105,
+      "aegis": "E_TURTLE_GENERAL",
+      "name": "Turtle General",
+      "namePtBr": null,
+      "level": 110,
+      "hp": 1442000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2106,
+      "aegis": "E_APOCALIPS_H",
+      "name": "Vesper",
+      "namePtBr": null,
+      "level": 128,
+      "hp": 3802000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2107,
+      "aegis": "E_FALLINGBISHOP",
+      "name": "Fallen Bishop Hibram",
+      "namePtBr": null,
+      "level": 138,
+      "hp": 5655000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2108,
+      "aegis": "E_GLOOMUNDERNIGHT",
+      "name": "Gloom Under Night",
+      "namePtBr": null,
+      "level": 139,
+      "hp": 3005000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2109,
+      "aegis": "E_RANDGRIS",
+      "name": "Valkyrie Randgris",
+      "namePtBr": null,
+      "level": 141,
+      "hp": 3205000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2110,
+      "aegis": "E_IFRIT",
+      "name": "Ifrit",
+      "namePtBr": null,
+      "level": 146,
+      "hp": 6935000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2111,
+      "aegis": "E_B_HARWORD",
+      "name": "Whitesmith Howard",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 6750000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2112,
+      "aegis": "E_B_SEYREN",
+      "name": "Lord Knight Seyren",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4680000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2113,
+      "aegis": "E_B_EREMES",
+      "name": "Assassin Cross Eremes",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4230000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2131,
+      "aegis": "LOST_DRAGON",
+      "name": "Lost Dragon",
+      "namePtBr": null,
+      "level": 135,
+      "hp": 608920,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2156,
+      "aegis": "LEAK",
+      "name": "Leak",
+      "namePtBr": null,
+      "level": 94,
+      "hp": 1266000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 120,
+      "spawns": [
+        {
+          "map": "dew_dun01",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": 2165,
+      "aegis": "I_QUEEN_SCARABA",
+      "name": "Gold Queen Scaraba",
+      "namePtBr": null,
+      "level": 140,
+      "hp": 6441600,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 120,
+      "spawns": [
+        {
+          "map": "dic_dun03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": 2187,
+      "aegis": "COELACANTH_N_A",
+      "name": "Gloomy Coelacanth",
+      "namePtBr": null,
+      "level": 100,
+      "hp": 2200000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2188,
+      "aegis": "COELACANTH_N_M",
+      "name": "Weird Coelacanth",
+      "namePtBr": null,
+      "level": 100,
+      "hp": 2200000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2189,
+      "aegis": "COELACANTH_H_M",
+      "name": "Mutant Coelacanth",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 5200000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2190,
+      "aegis": "COELACANTH_H_A",
+      "name": "Violent Coelacanth",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 5200000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2194,
+      "aegis": "MD_GIANT_OCTOPUS",
+      "name": "Giant Octopus",
+      "namePtBr": null,
+      "level": 95,
+      "hp": 500000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2202,
+      "aegis": "KRAKEN",
+      "name": "Kraken",
+      "namePtBr": null,
+      "level": 124,
+      "hp": 5602800,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 150,
+      "spawns": [
+        {
+          "map": "iz_dun05",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 150
+        }
+      ]
+    },
+    {
+      "id": 2212,
+      "aegis": "E_KNIGHT_OF_WINDSTORM",
+      "name": "Stormy Knight",
+      "namePtBr": null,
+      "level": 92,
+      "hp": 100000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2235,
+      "aegis": "B_RANDEL",
+      "name": "Paladin Randel",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 6870000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2236,
+      "aegis": "B_FLAMEL",
+      "name": "Creator Flamel",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4230000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2237,
+      "aegis": "B_CELIA",
+      "name": "Professor Celia",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 3847804,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2238,
+      "aegis": "B_CHEN",
+      "name": "Champion Chen",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4249350,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2239,
+      "aegis": "B_GERTIE",
+      "name": "Stalker Gertie",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 4057279,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2240,
+      "aegis": "B_ALPHOCCIO",
+      "name": "Clown Alphoccio",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 3894278,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2241,
+      "aegis": "B_TRENTINI",
+      "name": "Gypsy Trentini",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 3894278,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2249,
+      "aegis": "PYURIEL",
+      "name": "Angry Student Pyuriel",
+      "namePtBr": null,
+      "level": 141,
+      "hp": 2205000,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "gld2_prt",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 2251,
+      "aegis": "GIOIA",
+      "name": "Gioia",
+      "namePtBr": null,
+      "level": 146,
+      "hp": 2507989,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "gld2_ald",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 2253,
+      "aegis": "DAEHYON",
+      "name": "General Daehyun",
+      "namePtBr": null,
+      "level": 142,
+      "hp": 2500148,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "gld2_pay",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 2255,
+      "aegis": "KADES",
+      "name": "Dark Guardian Kades",
+      "namePtBr": null,
+      "level": 143,
+      "hp": 2505000,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 490,
+      "spawns": [
+        {
+          "map": "gld2_gef",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 490
+        }
+      ]
+    },
+    {
+      "id": 2306,
+      "aegis": "E_GOLDEN_BUG",
+      "name": "Golden Thief Bug",
+      "namePtBr": null,
+      "level": 65,
+      "hp": 100000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2319,
+      "aegis": "BUWAYA",
+      "name": "Buwaya",
+      "namePtBr": null,
+      "level": 151,
+      "hp": 4090365,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2341,
+      "aegis": "RWC_BOSS2011",
+      "name": "2011 RWC Boss",
+      "namePtBr": null,
+      "level": 141,
+      "hp": 3205000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2352,
+      "aegis": "E_RSX_0805",
+      "name": "RSX 0805",
+      "namePtBr": null,
+      "level": 100,
+      "hp": 10000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2362,
+      "aegis": "N_AMON_RA",
+      "name": "Amon Ra (Nightmare)",
+      "namePtBr": null,
+      "level": 145,
+      "hp": 2515784,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "moc_prydn2",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 2441,
+      "aegis": "B_NOVICE",
+      "name": "The Last One",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 265203,
+      "respawnMinMinutes": 480,
+      "respawnMaxMinutes": 480,
+      "spawns": [
+        {
+          "map": "teg_dun01",
+          "respawnMinMinutes": 480,
+          "respawnMaxMinutes": 480
+        }
+      ]
+    },
+    {
+      "id": 2442,
+      "aegis": "B_SUPERNOVICE",
+      "name": "King of the Alley",
+      "namePtBr": null,
+      "level": 99,
+      "hp": 268800,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 120,
+      "spawns": [
+        {
+          "map": "teg_dun02",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": 2475,
+      "aegis": "MG_CORRUPTION_ROOT",
+      "name": "Corrupted Soul",
+      "namePtBr": null,
+      "level": 150,
+      "hp": 1820000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2476,
+      "aegis": "MG_AMDARAIS",
+      "name": "Amdarais",
+      "namePtBr": null,
+      "level": 150,
+      "hp": 4290000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2483,
+      "aegis": "NG_BAPHOMET",
+      "name": "Nightmare Baphomet",
+      "namePtBr": null,
+      "level": 154,
+      "hp": 4008000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2529,
+      "aegis": "FACEWORM_QUEEN",
+      "name": "Faceworm Queen",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2532,
+      "aegis": "FACEWORM_QUEEN_R",
+      "name": "Red Faceworm Queen",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2533,
+      "aegis": "FACEWORM_QUEEN_G",
+      "name": "Green Faceworm Queen",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2534,
+      "aegis": "FACEWORM_QUEEN_B",
+      "name": "Blue Faceworm Queen",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2535,
+      "aegis": "FACEWORM_QUEEN_Y",
+      "name": "Yellow Faceworm Queen",
+      "namePtBr": null,
+      "level": 155,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2564,
+      "aegis": "GEFFEN_FENRIR",
+      "name": "Fenrir",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 20000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2942,
+      "aegis": "MM_EVIL_FANATICS",
+      "name": "Evil Fanatics",
+      "namePtBr": null,
+      "level": 151,
+      "hp": 8256000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 2996,
+      "aegis": "XM_CELINE_KIMI",
+      "name": "Celine Kimi",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 66666666,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3000,
+      "aegis": "EP14_MORS_BOSSB",
+      "name": "Morocc Necromancer",
+      "namePtBr": null,
+      "level": 101,
+      "hp": 80000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3029,
+      "aegis": "GRIM_REAPER_ANKOU",
+      "name": "Reaper Yanku",
+      "namePtBr": null,
+      "level": 159,
+      "hp": 50000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3073,
+      "aegis": "GRAND_PERE",
+      "name": "Awakened Ferre",
+      "namePtBr": null,
+      "level": 140,
+      "hp": 19471800,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3074,
+      "aegis": "TIMEHOLDER",
+      "name": "Time Holder",
+      "namePtBr": null,
+      "level": 170,
+      "hp": 25000000,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 120,
+      "spawns": [
+        {
+          "map": "c_tower3_",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 120
+        }
+      ]
+    },
+    {
+      "id": 3097,
+      "aegis": "MM_MOROCC_ADT",
+      "name": "Despair God Morroc",
+      "namePtBr": null,
+      "level": 175,
+      "hp": 120000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3124,
+      "aegis": "CHARLESTON3",
+      "name": "Charleston 3",
+      "namePtBr": null,
+      "level": 145,
+      "hp": 23671401,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3181,
+      "aegis": "E1_FELOCK",
+      "name": "Captain Ferlock",
+      "namePtBr": null,
+      "level": 130,
+      "hp": 3000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3190,
+      "aegis": "MM_SARAH",
+      "name": "Sarah Irene",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 100000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3220,
+      "aegis": "V_B_EREMES",
+      "name": "Guillotine Cross Eremes",
+      "namePtBr": null,
+      "level": 189,
+      "hp": 12600000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3221,
+      "aegis": "V_B_MAGALETA",
+      "name": "Arch Bishop Margaretha",
+      "namePtBr": null,
+      "level": 187,
+      "hp": 14400000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3222,
+      "aegis": "V_B_SHECIL",
+      "name": "Ranger Cecil",
+      "namePtBr": null,
+      "level": 189,
+      "hp": 12600000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3223,
+      "aegis": "V_B_HARWORD",
+      "name": "Mechanic Howard",
+      "namePtBr": null,
+      "level": 187,
+      "hp": 18000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3224,
+      "aegis": "V_B_KATRINN",
+      "name": "Warlock Kathryne",
+      "namePtBr": null,
+      "level": 187,
+      "hp": 10800000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3225,
+      "aegis": "V_B_SEYREN",
+      "name": "Rune Knight Seyren",
+      "namePtBr": null,
+      "level": 189,
+      "hp": 14400000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3240,
+      "aegis": "V_B_RANDEL",
+      "name": "Royal Guard Randel",
+      "namePtBr": null,
+      "level": 188,
+      "hp": 18000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3241,
+      "aegis": "V_B_FLAMEL",
+      "name": "Genetic Flamel",
+      "namePtBr": null,
+      "level": 186,
+      "hp": 14400000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3242,
+      "aegis": "V_B_CELIA",
+      "name": "Sorcerer Celia",
+      "namePtBr": null,
+      "level": 188,
+      "hp": 16200000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3243,
+      "aegis": "V_B_CHEN",
+      "name": "Sura Chen",
+      "namePtBr": null,
+      "level": 188,
+      "hp": 12600000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3244,
+      "aegis": "V_B_GERTIE",
+      "name": "Shadow Chaser Gertie",
+      "namePtBr": null,
+      "level": 188,
+      "hp": 14400000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3245,
+      "aegis": "V_B_ALPHOCCIO",
+      "name": "Minstrel Alphoccio",
+      "namePtBr": null,
+      "level": 186,
+      "hp": 10800000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3246,
+      "aegis": "V_B_TRENTINI",
+      "name": "Wanderer Trentini",
+      "namePtBr": null,
+      "level": 186,
+      "hp": 10800000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3254,
+      "aegis": "T_W_O",
+      "name": "T_W_O",
+      "namePtBr": null,
+      "level": 165,
+      "hp": 48000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3426,
+      "aegis": "MIN_EDDGA",
+      "name": "Infinite Eddga",
+      "namePtBr": null,
+      "level": 101,
+      "hp": 1850000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3427,
+      "aegis": "MIN_OSIRIS",
+      "name": "Infinite Osiris",
+      "namePtBr": null,
+      "level": 103,
+      "hp": 2850000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3428,
+      "aegis": "MIN_PHREEONI",
+      "name": "Infinite Phreeoni",
+      "namePtBr": null,
+      "level": 105,
+      "hp": 4750000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3429,
+      "aegis": "MIN_ORK_HERO",
+      "name": "Infinite Orc Hero",
+      "namePtBr": null,
+      "level": 107,
+      "hp": 6650000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3430,
+      "aegis": "MIN_TAO_GUNKA",
+      "name": "Infinite Tao Gunka",
+      "namePtBr": null,
+      "level": 109,
+      "hp": 8550000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3450,
+      "aegis": "BIJOU",
+      "name": "Bijou",
+      "namePtBr": null,
+      "level": 115,
+      "hp": 10000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3473,
+      "aegis": "AS_RAGGED_GOLEM",
+      "name": "Stefan.J.E.Wolf",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 20000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3505,
+      "aegis": "DR_BIG_EGGRING",
+      "name": "Big Eggring",
+      "namePtBr": null,
+      "level": 25,
+      "hp": 142480,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3621,
+      "aegis": "EP16_2_MM_CUTIE",
+      "name": "Pet Child",
+      "namePtBr": null,
+      "level": 120,
+      "hp": 3500000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3628,
+      "aegis": "EP16_2_H_HUNTER_EV",
+      "name": "Heart Hunter Ebel",
+      "namePtBr": null,
+      "level": 110,
+      "hp": 2800000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3633,
+      "aegis": "EP16_2_VENOM_KIMERA",
+      "name": "Venomous Chimera",
+      "namePtBr": null,
+      "level": 110,
+      "hp": 2800000,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "slabw01",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 3658,
+      "aegis": "MD_LICH_LORD_100",
+      "name": "Lich Lord",
+      "namePtBr": null,
+      "level": 100,
+      "hp": 2516502,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3659,
+      "aegis": "MD_LICH_LORD_160",
+      "name": "Lich Lord",
+      "namePtBr": null,
+      "level": 160,
+      "hp": 23485539,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3741,
+      "aegis": "MECHASPIDER",
+      "name": "Spider Chariot",
+      "namePtBr": null,
+      "level": 158,
+      "hp": 9799123,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "rockmi1",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 3757,
+      "aegis": "ILL_DRACULA",
+      "name": "Dracula of Rage",
+      "namePtBr": null,
+      "level": 139,
+      "hp": 6909690,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3758,
+      "aegis": "ILL_MOONLIGHT",
+      "name": "Angry Moonlight Flower",
+      "namePtBr": null,
+      "level": 118,
+      "hp": 4287803,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3796,
+      "aegis": "ILL_KTULLANUX",
+      "name": "Awakened Ktullanux",
+      "namePtBr": null,
+      "level": 135,
+      "hp": 13521442,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3804,
+      "aegis": "ILL_TURTLE_GENERAL",
+      "name": "Ominous Turtle General",
+      "namePtBr": null,
+      "level": 165,
+      "hp": 11628549,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 3810,
+      "aegis": "MD_KING_PORING",
+      "name": "King Poring",
+      "namePtBr": null,
+      "level": 35,
+      "hp": 140000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20273,
+      "aegis": "ILL_TAO_GUNKA",
+      "name": "Ancient Tao Gunka",
+      "namePtBr": null,
+      "level": 169,
+      "hp": 19280000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20277,
+      "aegis": "ILL_WOOTAN_DEFENDER",
+      "name": "Ancient Wootan Defender",
+      "namePtBr": null,
+      "level": 169,
+      "hp": 20154000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20340,
+      "aegis": "MD_EL_A17T",
+      "name": "EL1-A17T",
+      "namePtBr": null,
+      "level": 118,
+      "hp": 16412000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20346,
+      "aegis": "MD_MIGUEL",
+      "name": "Miguel",
+      "namePtBr": null,
+      "level": 115,
+      "hp": 8600000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20381,
+      "aegis": "EP17_1_R4885_BESTIA",
+      "name": "R48-85-Bestia",
+      "namePtBr": null,
+      "level": 174,
+      "hp": 4885000,
+      "respawnMinMinutes": 360,
+      "respawnMaxMinutes": 370,
+      "spawns": [
+        {
+          "map": "sp_rudus2",
+          "respawnMinMinutes": 360,
+          "respawnMaxMinutes": 370
+        }
+      ]
+    },
+    {
+      "id": 20419,
+      "aegis": "MUSPELLSKOLL_H",
+      "name": "Rigid Muspellskoll",
+      "namePtBr": null,
+      "level": 188,
+      "hp": 48530254,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "mag_dun03",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 20421,
+      "aegis": "BRINARANEA_H",
+      "name": "Corrupted Spider Queen",
+      "namePtBr": null,
+      "level": 195,
+      "hp": 74623473,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "gl_cas01_",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 20422,
+      "aegis": "DARK_LORD_H",
+      "name": "Corrupted Dark Lord",
+      "namePtBr": null,
+      "level": 194,
+      "hp": 74476822,
+      "respawnMinMinutes": 60,
+      "respawnMaxMinutes": 70,
+      "spawns": [
+        {
+          "map": "gl_cas01_",
+          "respawnMinMinutes": 60,
+          "respawnMaxMinutes": 70
+        }
+      ]
+    },
+    {
+      "id": 20601,
+      "aegis": "JUNGOLIANT",
+      "name": "Jewel Ungoliant",
+      "namePtBr": null,
+      "level": 197,
+      "hp": 37847096,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "ein_dun03",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 20620,
+      "aegis": "MD_REDPEPPER",
+      "name": "Red Pepper",
+      "namePtBr": null,
+      "level": 135,
+      "hp": 9514800,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20621,
+      "aegis": "MD_REDPEPPER_H",
+      "name": "Senior Red Pepper",
+      "namePtBr": null,
+      "level": 185,
+      "hp": 1008398847,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20642,
+      "aegis": "MD_SWEETY",
+      "name": "Sweety",
+      "namePtBr": null,
+      "level": 139,
+      "hp": 5011304,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20648,
+      "aegis": "EP17_2_PITAYA_BOSS",
+      "name": "Boss Meow",
+      "namePtBr": null,
+      "level": 168,
+      "hp": 19298694,
+      "respawnMinMinutes": 120,
+      "respawnMaxMinutes": 130,
+      "spawns": [
+        {
+          "map": "ba_lost",
+          "respawnMinMinutes": 120,
+          "respawnMaxMinutes": 130
+        }
+      ]
+    },
+    {
+      "id": 20659,
+      "aegis": "MD_PITAYA_BOSS",
+      "name": "Pitaya Boss",
+      "namePtBr": null,
+      "level": 138,
+      "hp": 7221377,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20667,
+      "aegis": "MD_SILVA_PAPILIA",
+      "name": "Silva Papilia",
+      "namePtBr": null,
+      "level": 145,
+      "hp": 7375012,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20668,
+      "aegis": "MD_GRAN_PAPILIA",
+      "name": "Gran Papilia",
+      "namePtBr": null,
+      "level": 195,
+      "hp": 74730723,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20811,
+      "aegis": "ILL_KRAKEN",
+      "name": "Deep Sea Kraken",
+      "namePtBr": null,
+      "level": 204,
+      "hp": 81289587,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20843,
+      "aegis": "ILL_ABYSMAL_WITCH",
+      "name": "Deep Sea Witch",
+      "namePtBr": null,
+      "level": 205,
+      "hp": 78368745,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20928,
+      "aegis": "CHIMERA_THEONE",
+      "name": "The One",
+      "namePtBr": null,
+      "level": 245,
+      "hp": 275042400,
+      "respawnMinMinutes": 360,
+      "respawnMaxMinutes": 370,
+      "spawns": [
+        {
+          "map": "amicitia2",
+          "respawnMinMinutes": 360,
+          "respawnMaxMinutes": 370
+        }
+      ]
+    },
+    {
+      "id": 20934,
+      "aegis": "R001_BESTIA",
+      "name": "R001-Bestia",
+      "namePtBr": null,
+      "level": 215,
+      "hp": 134179630,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 20943,
+      "aegis": "DEATH_WITCH",
+      "name": "Death Witch",
+      "namePtBr": null,
+      "level": 255,
+      "hp": 398856250,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21301,
+      "aegis": "EP18_BURNING_FANG",
+      "name": "Burning Fang",
+      "namePtBr": null,
+      "level": 212,
+      "hp": 98158095,
+      "respawnMinMinutes": 360,
+      "respawnMaxMinutes": 370,
+      "spawns": [
+        {
+          "map": "oz_dun02",
+          "respawnMinMinutes": 360,
+          "respawnMaxMinutes": 370
+        }
+      ]
+    },
+    {
+      "id": 21314,
+      "aegis": "EP18_MD_SCHULANG",
+      "name": "Schulang",
+      "namePtBr": null,
+      "level": 185,
+      "hp": 23586543,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21316,
+      "aegis": "EP18_MD_SCHULANG_R",
+      "name": "Schulang",
+      "namePtBr": null,
+      "level": 185,
+      "hp": 2000000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21317,
+      "aegis": "EP18_MD_DEMI_FREYJA_R",
+      "name": "Twisted God Freyja",
+      "namePtBr": null,
+      "level": 185,
+      "hp": 2000000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21360,
+      "aegis": "EP18_MD_SCHULANG_L",
+      "name": "Schulang",
+      "namePtBr": null,
+      "level": 224,
+      "hp": 2000000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21361,
+      "aegis": "EP18_MD_DEMI_FREYJA_L",
+      "name": "Twisted God Freyja",
+      "namePtBr": null,
+      "level": 224,
+      "hp": 2000000000,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    },
+    {
+      "id": 21395,
+      "aegis": "ILL_MAYA",
+      "name": "Silent Maya",
+      "namePtBr": null,
+      "level": 175,
+      "hp": 24512365,
+      "respawnMinMinutes": null,
+      "respawnMaxMinutes": null,
+      "spawns": []
+    }
+  ]
+}

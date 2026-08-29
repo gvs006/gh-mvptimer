@@ -1,0 +1,17 @@
+{
+  "titulo": "MVP Timer",
+  "servidor": "Servidor",
+  "adicionar": "Registrar morte",
+  "agora": "agora",
+  "horario": "Horário",
+  "resetar": "Resetar",
+  "remover": "Remover",
+  "nasceEm": "nasce em",
+  "janelaAberta": "pode nascer a qualquer momento",
+  "atrasado": "já nasceu — ninguém viu",
+  "semTimer": "sem timer",
+  "somAtivar": "Ativar som",
+  "somAtivo": "Som ativo",
+  "apelido": "Seu apelido",
+  "por": "por"
+}
