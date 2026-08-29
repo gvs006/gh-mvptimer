@@ -25,6 +25,11 @@ export function GuildCliente({ slug }: { slug: string }) {
   const [carregando, setCarregando] = useState(true);
   const [apelido, setApelido] = useState('');
   const [painelSenhas, setPainelSenhas] = useState(false);
+  /* Falha de gravação precisa aparecer. Sem isto, o card mostra o timer pela
+     atualização otimista, o servidor nunca recebe, e a pessoa passa a noite
+     achando que a guild está vendo. Foi exatamente assim que a primeira
+     tentativa de uso se perdeu. */
+  const [falha, setFalha] = useState('');
 
   /* O apelido é do jogador, não da guild: fica no device e não vai para o
      banco a não ser junto de uma morte registrada. */
@@ -103,11 +108,25 @@ export function GuildCliente({ slug }: { slug: string }) {
           }
         : d
     );
-    await fetch(`/api/g/${slug}/timers`, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ mvpId, map, morteEm, por: apelido || undefined }),
-    });
+    try {
+      const r = await fetch(`/api/g/${slug}/timers`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ mvpId, map, morteEm, por: apelido || undefined }),
+      });
+      if (!r.ok) {
+        setFalha(
+          r.status === 401
+            ? 'Sua sessão expirou — entre de novo. O registro NÃO foi salvo.'
+            : `Não consegui salvar (erro ${r.status}). O registro não chegou na guild.`
+        );
+        return;
+      }
+      setFalha('');
+    } catch {
+      setFalha('Sem conexão. O registro não chegou na guild.');
+      return;
+    }
     void buscar();
   }
 
@@ -115,9 +134,19 @@ export function GuildCliente({ slug }: { slug: string }) {
     setDados((d) =>
       d ? { ...d, timers: d.timers.filter((t) => !(t.mvpId === mvpId && t.map === map)) } : d
     );
-    await fetch(`/api/g/${slug}/timers?mvpId=${mvpId}&map=${encodeURIComponent(map)}`, {
-      method: 'DELETE',
-    });
+    try {
+      const r = await fetch(`/api/g/${slug}/timers?mvpId=${mvpId}&map=${encodeURIComponent(map)}`, {
+        method: 'DELETE',
+      });
+      if (!r.ok) {
+        setFalha(`Não consegui remover (erro ${r.status}).`);
+        return;
+      }
+      setFalha('');
+    } catch {
+      setFalha('Sem conexão. A remoção não chegou na guild.');
+      return;
+    }
     void buscar();
   }
 
@@ -173,6 +202,18 @@ export function GuildCliente({ slug }: { slug: string }) {
 
   return (
     <main className="mx-auto max-w-7xl p-4 sm:p-6">
+      {falha && (
+        <div
+          role="alert"
+          className="mb-4 flex items-center gap-2 rounded-xl border border-[var(--color-janela)] bg-[var(--color-janela)]/15 p-3 text-sm text-[var(--color-janela)]"
+        >
+          <span>⚠ {falha}</span>
+          <button onClick={() => setFalha('')} aria-label="Fechar aviso" className="ml-auto">
+            ✕
+          </button>
+        </div>
+      )}
+
       <PainelTimers
         /* O servidor customizado manda; sem ele, o catálogo puro do modo. É o
            que faz a guild ver os MVPs com o respawn DELA. */
