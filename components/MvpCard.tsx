@@ -36,6 +36,12 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
     const ts = horaParaTimestamp(texto);
     if (ts === null) return setErro(true);
     onRegistrar(ts);
+    cancelar();
+  }
+
+  /* Fecha o campo e devolve o card ao estado limpo. Sem zerar texto e erro, o
+     campo reabre com o lixo da tentativa anterior. */
+  function cancelar() {
     setEditando(false);
     setTexto('');
     setErro(false);
@@ -142,30 +148,51 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
       ) : somenteLeitura ? (
         <div className="text-xs text-[var(--color-suave)]">sem timer</div>
       ) : editando ? (
-        <div className="flex gap-1">
-          <input
-            autoFocus
-            value={texto}
-            onChange={(ev) => {
-              setTexto(ev.target.value);
-              setErro(false);
-            }}
-            onKeyDown={(ev) => {
-              if (ev.key === 'Enter') confirmar();
-              if (ev.key === 'Escape') setEditando(false);
-            }}
-            placeholder="14:32"
-            aria-label="Horário da morte"
-            aria-invalid={erro}
-            className="w-full rounded-lg border bg-black/25 px-2 py-1.5 text-sm outline-none"
-            style={{ borderColor: erro ? 'var(--color-janela)' : 'var(--color-borda)' }}
-          />
-          <button
-            onClick={confirmar}
-            className="rounded-lg border border-[var(--color-borda)] px-3 text-xs hover:bg-[var(--color-borda)]"
-          >
-            OK
-          </button>
+        <div className="flex flex-col gap-1">
+          <div className="flex gap-1">
+            <input
+              autoFocus
+              value={texto}
+              onChange={(ev) => {
+                setTexto(ev.target.value);
+                setErro(false);
+              }}
+              onKeyDown={(ev) => {
+                if (ev.key === 'Enter') confirmar();
+                if (ev.key === 'Escape') cancelar();
+              }}
+              placeholder="14:32"
+              aria-label="Horário da morte"
+              aria-invalid={erro}
+              inputMode="numeric"
+              className="w-full rounded-lg border bg-black/25 px-2 py-1.5 text-sm outline-none"
+              style={{ borderColor: erro ? 'var(--color-janela)' : 'var(--color-borda)' }}
+            />
+            <button
+              onClick={confirmar}
+              title="Confirmar horário"
+              className="rounded-lg border border-[var(--color-borda)] px-3 text-xs hover:bg-[var(--color-borda)]"
+            >
+              OK
+            </button>
+            {/* Escape resolve no teclado, mas não é descobrível e não existe em
+                celular: sem este botão, quem abre o campo por engano fica preso
+                nele — só sai digitando um horário que não quer registrar. */}
+            <button
+              onClick={cancelar}
+              aria-label="Cancelar"
+              title="Cancelar (Esc)"
+              className="rounded-lg border border-[var(--color-borda)] px-2.5 text-xs text-[var(--color-suave)] hover:bg-[var(--color-borda)] hover:text-[var(--color-texto)]"
+            >
+              ✕
+            </button>
+          </div>
+
+          {erro && (
+            <span className="text-[11px] text-[var(--color-janela)]">
+              Use o formato hh:mm — ex.: 14:32
+            </span>
+          )}
         </div>
       ) : (
         <div className="flex gap-2">

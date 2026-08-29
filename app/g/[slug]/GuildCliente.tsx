@@ -30,6 +30,7 @@ export function GuildCliente({ slug }: { slug: string }) {
      achando que a guild está vendo. Foi exatamente assim que a primeira
      tentativa de uso se perdeu. */
   const [falha, setFalha] = useState('');
+  const [verSenha, setVerSenha] = useState(false);
 
   /* O apelido é do jogador, não da guild: fica no device e não vai para o
      banco a não ser junto de uma morte registrada. */
@@ -167,15 +168,33 @@ export function GuildCliente({ slug }: { slug: string }) {
           Guild <span className="font-mono">{slug}</span>. Use a senha que a guild te passou.
         </p>
 
-        <input
-          type="password"
-          value={senha}
-          onChange={(ev) => setSenha(ev.target.value)}
-          placeholder="Senha"
-          aria-label="Senha"
-          autoFocus
-          className="mb-2 w-full rounded-lg border border-[var(--color-borda)] bg-black/25 px-3 py-2 text-sm outline-none focus:border-[var(--color-contando)]"
-        />
+        {/* A senha da guilda é uma frase de quatro palavras copiada do Discord:
+            errar ao digitar é o normal, não a exceção. Sem poder conferir o que
+            foi digitado, a pessoa tenta às cegas e culpa a senha. */}
+        <div className="relative mb-2">
+          <input
+            type={verSenha ? 'text' : 'password'}
+            value={senha}
+            onChange={(ev) => setSenha(ev.target.value)}
+            placeholder="Senha"
+            aria-label="Senha"
+            autoFocus
+            autoCapitalize="none"
+            autoCorrect="off"
+            spellCheck={false}
+            className="w-full rounded-lg border border-[var(--color-borda)] bg-black/25 py-2 pr-11 pl-3 text-sm outline-none focus:border-[var(--color-contando)]"
+          />
+          <button
+            type="button"
+            onClick={() => setVerSenha((v) => !v)}
+            aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'}
+            aria-pressed={verSenha}
+            title={verSenha ? 'Ocultar senha' : 'Mostrar senha'}
+            className="absolute inset-y-0 right-0 grid w-11 place-items-center text-[var(--color-suave)] hover:text-[var(--color-texto)]"
+          >
+            {verSenha ? '🙈' : '👁'}
+          </button>
+        </div>
 
         {erro && <p className="mb-2 text-xs text-[var(--color-janela)]">{erro}</p>}
 

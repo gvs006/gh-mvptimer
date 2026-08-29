@@ -68,34 +68,75 @@ export default function Pagina() {
 /* Atalho para o modo compartilhado. Sem isto, quem cai na home só descobre o
    caminho da guild se alguém contar. */
 function IrParaGuild() {
+  const [guilds, setGuilds] = useState<Array<{ slug: string; name: string }>>([]);
   const [slug, setSlug] = useState('');
+  const [carregando, setCarregando] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/guilds')
+      .then((r) => (r.ok ? r.json() : { guilds: [] }))
+      .then((d) => {
+        const lista = d.guilds ?? [];
+        setGuilds(lista);
+        /* Com uma guilda só, escolher não é decisão — já vem selecionada. */
+        if (lista.length === 1) setSlug(lista[0].slug);
+      })
+      .catch(() => setGuilds([]))
+      .finally(() => setCarregando(false));
+  }, []);
+
+  if (carregando) {
+    return <span className="ml-auto text-xs text-[var(--color-suave)]">carregando guildas…</span>;
+  }
+
+  /* Sem backend configurado a lista vem vazia: some o seletor em vez de
+     oferecer um campo que não vai levar a lugar nenhum. */
+  if (guilds.length === 0) {
+    return (
+      <span className="ml-auto text-xs text-[var(--color-suave)]">
+        nenhuma guilda disponível
+      </span>
+    );
+  }
 
   return (
-    <form
-      action={`/g/${slug || 'minha-guild'}`}
-      className="ml-auto flex items-center gap-1"
-      onSubmit={(ev) => {
-        if (!slug.trim()) ev.preventDefault();
-      }}
-    >
-      <input
-        value={slug}
-        onChange={(ev) => setSlug(ev.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''))}
-        placeholder="nome-da-guild"
-        aria-label="Nome da guild"
-        className="w-32 rounded-lg border border-[var(--color-borda)] bg-[var(--color-painel-alto)] px-2 py-1 text-sm outline-none"
-      />
+    <div className="ml-auto flex items-center gap-1.5">
+      <div className="relative">
+        <select
+          value={slug}
+          onChange={(ev) => setSlug(ev.target.value)}
+          aria-label="Escolher guilda"
+          /* `appearance-none` + seta própria: a seta nativa do select muda de
+             cara em cada sistema e destoa do resto do painel. */
+          className="appearance-none rounded-lg border border-[var(--color-borda)] bg-[var(--color-painel-alto)] py-1.5 pr-8 pl-3 text-sm outline-none focus:border-[var(--color-iminente)]"
+        >
+          <option value="">Escolher guilda…</option>
+          {guilds.map((g) => (
+            <option key={g.slug} value={g.slug}>
+              {g.name}
+            </option>
+          ))}
+        </select>
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-y-0 right-2.5 flex items-center text-xs text-[var(--color-suave)]"
+        >
+          ▾
+        </span>
+      </div>
+
       <Link
-        href={`/g/${slug}`}
+        href={slug ? `/g/${slug}` : '#'}
         aria-disabled={!slug}
-        className={`rounded-lg px-2.5 py-1 text-sm font-semibold ${
+        tabIndex={slug ? undefined : -1}
+        className={`rounded-lg px-3 py-1.5 text-sm font-semibold transition-opacity ${
           slug
-            ? 'bg-[var(--color-iminente)] text-[#0b1020]'
+            ? 'bg-[var(--color-iminente)] text-[#0b1020] hover:opacity-90'
             : 'pointer-events-none bg-[var(--color-borda)] text-[var(--color-suave)]'
         }`}
       >
         Entrar
       </Link>
-    </form>
+    </div>
   );
 }
