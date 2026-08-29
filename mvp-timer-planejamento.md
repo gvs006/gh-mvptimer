@@ -169,8 +169,8 @@ vários mapas (Atroce, Eddga, Doppelganger) pode ter delay diferente em cada um
 3. [x] Persistência local (localStorage via Zustand `persist`).
 4. [x] Som de nascimento (Web Audio API, atrás de botão por causa do autoplay).
 5. [x] Toggle Pre-RE/RE + servidor customizado, persistido.
-6. Backend compartilhado (Supabase) + sync em tempo real.
-7. Acesso `/g/{slug}`: senha de membro e de admin, cookie de sessão, troca de senha com bump de versão, apelido e histórico de quem alterou.
+6. [x] Backend compartilhado (Supabase) + sync (polling de 10s; Realtime ficou de fora, ver README).
+7. [x] Acesso `/g/{slug}`: senha de membro e de admin, cookie de sessão, troca de senha com bump de versão, apelido gravado por registro.
 8. ~~GIFs dos mobs~~ — feito, ver docs/assets.md.
 9. Deploy contínuo Vercel + repositório público GitHub + README.
 
@@ -181,9 +181,11 @@ vários mapas (Atroce, Eddga, Doppelganger) pode ter delay diferente em cada um
 - [x] Scaffold do Next.js (App Router + TS + Tailwind 4) — `npm run dev`, roda e é testável.
 - [ ] Nomes pt-BR: conferir os cronometráveis sem entrada (17 no Pre-RE), separando "falta traduzir" de "o bRO também não traduz".
 - [x] Decidir se login será necessário. → **Sem conta por pessoa**: duas senhas compartilhadas (membro/admin), ver seção Acesso e Compartilhamento.
-- [ ] Decidir provedor de backend/sync — Supabase é o encaixe (Postgres + Realtime + free tier), falta confirmar.
+- [x] Provedor de backend/sync. → **Supabase** (Postgres, free tier), acesso só server-side com service role key e RLS deny-all.
+- [ ] Histórico de alterações por MVP (hoje o card mostra só quem fez a última) — é o que fecha o caso do impostor.
 - [x] Override de tempo por servidor. → `data/custom-servers.json`, já com a Sombra de Nidhogg (4h, nyd_dun02).
 - [ ] Ligar o i18n de verdade (hoje os JSON existem mas a UI tem texto embutido).
+- [ ] Deploy na Vercel (as 3 env vars; nenhuma com prefixo NEXT_PUBLIC_).
 - [ ] Coordenadas do túmulo clicando no mapa — o campo existe no modelo, a tela ainda não.
 - [ ] Decidir se a arte fica em hotlink ou é baixada para `public/` (ver seção Licença em docs/assets.md).
 

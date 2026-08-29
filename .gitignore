@@ -3,3 +3,10 @@ node_modules/
 .env
 .env.local
 *.tsbuildinfo
+
+# Gerados pelo `next dev` para ferramentas de IA, nao sao do projeto
+AGENTS.md
+CLAUDE.md
+
+# Notas de trabalho, ficam so na maquina
+docs/

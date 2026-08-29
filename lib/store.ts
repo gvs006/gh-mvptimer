@@ -31,7 +31,7 @@ export const chaveDe = (mvpId: number, map: string) => `${mvpId}@${map}`;
 export const useTimers = create<Estado>()(
   persist(
     (set) => ({
-      servidorId: 'ragnabeat',
+      servidorId: 'thanatosro',
       apelido: '',
       registros: {},
 

@@ -21,9 +21,10 @@ interface Props {
   agora: number;
   onRegistrar: (morteEm: number) => void;
   onRemover: () => void;
+  somenteLeitura?: boolean;
 }
 
-export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover }: Props) {
+export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, somenteLeitura }: Props) {
   const [editando, setEditando] = useState(false);
   const [texto, setTexto] = useState('');
   const [erro, setErro] = useState(false);
@@ -81,14 +82,12 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover }:
           </div>
         </div>
 
-        {registro && (
+        {registro && !somenteLeitura && (
           <button
             onClick={onRemover}
             aria-label="Remover timer"
-            title="Remover"
-            /* Só aparece no hover/foco: em card ativo o botão destrutivo não
-               deve disputar atenção com o contador. */
-            className="opacity-0 transition-opacity group-hover:opacity-100 focus-visible:opacity-100 text-[var(--color-suave)] hover:text-[var(--color-janela)]"
+            title="Remover timer"
+            className="grid size-7 shrink-0 place-items-center rounded-md border border-[var(--color-janela)]/60 bg-[var(--color-janela)]/15 text-sm leading-none text-[var(--color-janela)] transition-colors hover:bg-[var(--color-janela)] hover:text-white"
           >
             ✕
           </button>
@@ -131,13 +130,17 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover }:
             {registro!.por && <span className="shrink-0 truncate">por {registro!.por}</span>}
           </div>
 
-          <button
-            onClick={() => onRegistrar(Date.now())}
-            className="rounded-lg border border-[var(--color-borda)] px-2 py-1.5 text-xs hover:bg-[var(--color-borda)]"
-          >
-            Resetar (morreu agora)
-          </button>
+          {!somenteLeitura && (
+            <button
+              onClick={() => onRegistrar(Date.now())}
+              className="rounded-lg border border-[var(--color-borda)] px-2 py-1.5 text-xs hover:bg-[var(--color-borda)]"
+            >
+              Resetar (morreu agora)
+            </button>
+          )}
         </>
+      ) : somenteLeitura ? (
+        <div className="text-xs text-[var(--color-suave)]">sem timer</div>
       ) : editando ? (
         <div className="flex gap-1">
           <input

@@ -1861,8 +1861,8 @@
   ],
   "servers": [
     {
-      "id": "ragnabeat",
-      "label": "Ragnabeat",
+      "id": "thanatosro",
+      "label": "ThanatosRO",
       "mode": "pre-re",
       "mvps": [
         {
