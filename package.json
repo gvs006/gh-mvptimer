@@ -11,7 +11,8 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "guild:criar": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/criar-guild.mjs",
-    "guild:token": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/token-bot.mjs"
+    "guild:token": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/token-bot.mjs",
+    "guild:senha": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/senha.mjs"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
