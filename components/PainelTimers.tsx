@@ -20,6 +20,10 @@ interface Linha {
    pegar, depois o que já se perdeu, e a espera por último. */
 const ORDEM = { janela: 0, atrasado: 1, iminente: 2, contando: 3 } as const;
 
+/* Fora do componente: `new Set()` a cada render seria uma referência nova, e os
+   useMemo abaixo dependem dela — recalculariam sempre, à toa. */
+const VAZIO: ReadonlySet<string> = new Set();
+
 interface Props {
   mvps: Mvp[];
   registros: Record<string, Registro>;
@@ -68,6 +72,13 @@ export function PainelTimers({
       : lista;
   }, [mvps, busca]);
 
+  /* Declarado ANTES dos useMemo que o consomem. Sendo `const`, usá-lo em um
+     memo acima seria acesso na zona morta temporal — e o React executa esses
+     callbacks durante o render, não depois, então quebra a página inteira. O
+     TypeScript não pega: dentro de uma closure ele assume que a chamada pode
+     acontecer depois da declaração. */
+  const fora = despriorizados ?? VAZIO;
+
   const ativas = useMemo(
     () =>
       linhas
@@ -83,7 +94,6 @@ export function PainelTimers({
   /* Despriorizado sai das duas listas de cima e vai para a gaveta do fim —
      inclusive se tiver timer rodando. Se continuasse aparecendo em "em
      contagem", despriorizar não teria efeito nenhum onde mais incomoda. */
-  const fora = despriorizados ?? new Set<string>();
   const inativas = useMemo(
     () => linhas.filter((l) => !registros[l.chave] && !fora.has(l.chave)),
     [linhas, registros, despriorizados]
