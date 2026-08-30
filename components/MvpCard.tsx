@@ -22,9 +22,22 @@ interface Props {
   onRegistrar: (morteEm: number) => void;
   onRemover: () => void;
   somenteLeitura?: boolean;
+  /** Só admin recebe; sem isso o botão nem aparece. */
+  onDespriorizar?: () => void;
+  despriorizado?: boolean;
 }
 
-export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, somenteLeitura }: Props) {
+export function MvpCard({
+  mvp,
+  spawn,
+  registro,
+  agora,
+  onRegistrar,
+  onRemover,
+  somenteLeitura,
+  onDespriorizar,
+  despriorizado,
+}: Props) {
   const [editando, setEditando] = useState(false);
   const [texto, setTexto] = useState('');
   const [erro, setErro] = useState(false);
@@ -49,18 +62,18 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
 
   return (
     <div
-      className="group relative flex flex-col gap-2.5 rounded-xl border bg-gradient-to-b from-[var(--color-painel-alto)] to-[var(--color-painel)] p-3 transition-colors"
+      className="group relative flex flex-col gap-2 rounded-xl border bg-gradient-to-b from-[var(--color-painel-alto)] to-[var(--color-painel)] p-2 transition-colors sm:gap-2.5 sm:p-3"
       style={{
         borderColor: e ? `color-mix(in srgb, ${e.cor} 55%, var(--color-borda))` : 'var(--color-borda)',
         boxShadow: e?.urgente ? `0 0 0 1px ${e.cor}, 0 4px 20px -6px ${e.cor}` : undefined,
       }}
     >
-      <div className="flex items-start gap-3">
-        <div className="grid size-14 shrink-0 place-items-center rounded-lg bg-black/25">
+      <div className="flex items-start gap-2 sm:gap-3">
+        <div className="grid size-10 shrink-0 place-items-center rounded-lg bg-black/25 sm:size-14">
           <img
             src={sprite.mobGif(mvp.id)}
             alt=""
-            className="max-h-12 max-w-12 object-contain [image-rendering:pixelated]"
+            className="max-h-9 max-w-9 object-contain [image-rendering:pixelated] sm:max-h-12 sm:max-w-12"
             /* Nem todo mob tem GIF; o PNG é o retrato estático do mesmo id.
                Sem o guard, o onError volta a disparar no próprio fallback. */
             onError={(ev) => {
@@ -73,7 +86,7 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
         </div>
 
         <div className="min-w-0 flex-1">
-          <div className="truncate font-semibold leading-tight">{nomeMvp(mvp)}</div>
+          <div className="truncate text-[13px] leading-tight font-semibold sm:text-base">{nomeMvp(mvp)}</div>
           <div className="mt-0.5 flex flex-wrap items-center gap-1 text-xs text-[var(--color-suave)]">
             <span className="truncate font-mono">{spawn.map}</span>
             {spawn.source === 'custom' && (
@@ -82,11 +95,24 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
               </span>
             )}
           </div>
-          <div className="text-xs text-[var(--color-suave)]">
+          {/* Some no celular: em coluna estreita o que importa é o contador,
+              não o intervalo teórico do respawn. */}
+          <div className="hidden text-xs text-[var(--color-suave)] sm:block">
             {formatarDuracao(spawn.respawnMinMs)}
             {spawn.respawnMaxMs > spawn.respawnMinMs && ` – ${formatarDuracao(spawn.respawnMaxMs)}`}
           </div>
         </div>
+
+        {onDespriorizar && (
+          <button
+            onClick={onDespriorizar}
+            aria-label={despriorizado ? 'Voltar para a lista principal' : 'Marcar como não prioritário'}
+            title={despriorizado ? 'Voltar para a lista principal' : 'Marcar como não prioritário'}
+            className="grid size-7 shrink-0 place-items-center rounded-md border border-[var(--color-borda)] text-xs text-[var(--color-suave)] transition-colors hover:bg-[var(--color-borda)] hover:text-[var(--color-texto)]"
+          >
+            {despriorizado ? '↑' : '↓'}
+          </button>
+        )}
 
         {registro && !somenteLeitura && (
           <button
@@ -107,7 +133,7 @@ export function MvpCard({ mvp, spawn, registro, agora, onRegistrar, onRemover, s
               {e.icone}
             </span>
             <span
-              className="font-mono text-2xl leading-none font-semibold tabular-nums"
+              className="font-mono text-xl leading-none font-semibold tabular-nums sm:text-2xl"
               style={{ color: e.cor }}
             >
               {j.fase === 'contando' || j.fase === 'iminente'

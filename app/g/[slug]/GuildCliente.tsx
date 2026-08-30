@@ -16,6 +16,8 @@ interface Dados {
   papel: 'membro' | 'admin';
   guild: { name: string; mode: 'pre-re' | 're'; serverLabel: string; serverId: string | null };
   timers: Array<{ mvpId: number; map: string; morteEm: number; por?: string }>;
+  /** Chaves `mvpId@map` que a guilda tirou da frente. */
+  despriorizados: string[];
 }
 
 export function GuildCliente({ slug }: { slug: string }) {
@@ -126,6 +128,38 @@ export function GuildCliente({ slug }: { slug: string }) {
       setFalha('');
     } catch {
       setFalha('Sem conexão. O registro não chegou na guild.');
+      return;
+    }
+    void buscar();
+  }
+
+  /* Só admin chega aqui — o painel não passa o callback para membro, e a rota
+     recusa de qualquer forma. */
+  async function despriorizar(mvpId: number, map: string, valor: boolean) {
+    const chave = chaveDe(mvpId, map);
+    setDados((d) =>
+      d
+        ? {
+            ...d,
+            despriorizados: valor
+              ? [...d.despriorizados, chave]
+              : d.despriorizados.filter((x) => x !== chave),
+          }
+        : d
+    );
+    try {
+      const r = await fetch(`/api/g/${slug}/prefs`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ mvpId, map, despriorizado: valor, por: apelido || undefined }),
+      });
+      if (!r.ok) {
+        setFalha(`Não consegui mudar a prioridade (erro ${r.status}).`);
+        return;
+      }
+      setFalha('');
+    } catch {
+      setFalha('Sem conexão. A prioridade não mudou para a guilda.');
       return;
     }
     void buscar();
@@ -242,6 +276,8 @@ export function GuildCliente({ slug }: { slug: string }) {
         setApelido={setApelido}
         onRegistrar={registrar}
         onRemover={remover}
+        despriorizados={new Set(dados.despriorizados ?? [])}
+        onDespriorizar={dados.papel === 'admin' ? despriorizar : undefined}
         cabecalho={
           <>
             <h1 className="mr-1 text-lg font-bold tracking-tight">

@@ -34,7 +34,15 @@ export async function GET(_req: Request, ctx: { params: Promise<{ slug: string }
 
   if (error) return NextResponse.json({ erro: error.message }, { status: 500 });
 
+  /* Vem junto com os timers, no mesmo request: são lidos sempre em conjunto, e
+     um segundo round-trip a cada 10s de polling não se paga. */
+  const { data: prefs } = await db()
+    .from('guild_mvp_prefs')
+    .select('mvp_id,map')
+    .eq('guild_id', sessao.guild.id);
+
   return NextResponse.json({
+    despriorizados: (prefs ?? []).map((p) => `${p.mvp_id}@${p.map}`),
     papel: sessao.sessao.papel,
     guild: {
       name: sessao.guild.name,

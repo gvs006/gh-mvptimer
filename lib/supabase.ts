@@ -60,6 +60,24 @@ export interface Database {
         Update: Partial<Database['public']['Tables']['timers']['Row']>;
         Relationships: [];
       };
+      guild_mvp_prefs: {
+        Row: {
+          guild_id: string;
+          mvp_id: number;
+          map: string;
+          updated_by: string | null;
+          updated_at: string;
+        };
+        Insert: {
+          guild_id: string;
+          mvp_id: number;
+          map: string;
+          updated_by?: string | null;
+          updated_at?: string;
+        };
+        Update: Partial<Database['public']['Tables']['guild_mvp_prefs']['Row']>;
+        Relationships: [];
+      };
       login_attempts: {
         Row: { id: number; slug: string; ip: string; at: string };
         Insert: { slug: string; ip: string };
