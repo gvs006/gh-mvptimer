@@ -22,6 +22,7 @@ export interface Database {
           server_label: string;
           mode: 'pre-re' | 're';
           server_id: string | null;
+          bot_token: string | null;
           member_password_hash: string;
           admin_password_hash: string;
           member_session_version: number;
@@ -35,6 +36,7 @@ export interface Database {
           server_label?: string;
           mode?: 'pre-re' | 're';
           server_id?: string | null;
+          bot_token?: string | null;
           member_password_hash: string;
           admin_password_hash: string;
         };
@@ -51,6 +53,8 @@ export interface Database {
           coord_y: number | null;
           updated_by: string | null;
           updated_at: string;
+          source: string;
+          precision: string;
         };
         Insert: Database['public']['Tables']['timers']['Row'];
         Update: Partial<Database['public']['Tables']['timers']['Row']>;

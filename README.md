@@ -109,6 +109,12 @@ npm run db:catalog                                  # mescla + overrides de serv
 
 Ajuste de servidor privado vai em `data/custom-servers.json`.
 
+## Testes
+
+Teste sempre contra a guilda `zz-teste`, nunca contra uma guilda em uso, e
+nunca escreva `delete` sem `guild_id` no filtro. As regras e o incidente que
+as originou estão em [TESTES.md](TESTES.md).
+
 ## Créditos
 
 - Sprites de mob: [RateMyServer](https://ratemyserver.net) e [Divine Pride](https://www.divine-pride.net)

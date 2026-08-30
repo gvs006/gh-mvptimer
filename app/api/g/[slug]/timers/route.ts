@@ -78,6 +78,10 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
            vire vandalismo de layout. */
         updated_by: corpo.por?.slice(0, 24) || null,
         updated_at: new Date().toISOString(),
+        /* Gente digitando sempre vence o bot: quem viu a morte sabe mais que o
+           finder que passou pelo mapa depois. */
+        source: 'manual',
+        precision: 'exata',
       },
       { onConflict: 'guild_id,mvp_id,map' }
     );
