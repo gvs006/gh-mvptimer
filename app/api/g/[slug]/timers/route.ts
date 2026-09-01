@@ -10,7 +10,7 @@ import type { Database } from '../../../../../lib/supabase';
 
 type LinhaTimer = Pick<
   Database['public']['Tables']['timers']['Row'],
-  'mvp_id' | 'map' | 'death_at' | 'coord_x' | 'coord_y' | 'updated_by'
+  'mvp_id' | 'map' | 'death_at' | 'coord_x' | 'coord_y' | 'updated_by' | 'precision'
 >;
 
 const paraCliente = (t: LinhaTimer) => ({
@@ -20,6 +20,9 @@ const paraCliente = (t: LinhaTimer) => ({
   coordX: t.coord_x ?? undefined,
   coordY: t.coord_y ?? undefined,
   por: t.updated_by ?? undefined,
+  /* Sem isto a tela trata palpite e horário conferido do mesmo jeito, e um
+     "nasce em 2h" de lápide vista de longe engana mais do que ajuda. */
+  precisao: t.precision === 'estimada' ? ('estimada' as const) : ('exata' as const),
 });
 
 export async function GET(_req: Request, ctx: { params: Promise<{ slug: string }> }) {
@@ -29,7 +32,7 @@ export async function GET(_req: Request, ctx: { params: Promise<{ slug: string }
 
   const { data, error } = await db()
     .from('timers')
-    .select('mvp_id,map,death_at,coord_x,coord_y,updated_by,updated_at')
+    .select('mvp_id,map,death_at,coord_x,coord_y,updated_by,precision')
     .eq('guild_id', sessao.guild.id);
 
   if (error) return NextResponse.json({ erro: error.message }, { status: 500 });

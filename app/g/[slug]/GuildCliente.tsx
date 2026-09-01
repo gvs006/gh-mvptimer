@@ -15,7 +15,13 @@ const INTERVALO_MS = 10000;
 interface Dados {
   papel: 'membro' | 'admin';
   guild: { name: string; mode: 'pre-re' | 're'; serverLabel: string; serverId: string | null };
-  timers: Array<{ mvpId: number; map: string; morteEm: number; por?: string }>;
+  timers: Array<{
+    mvpId: number;
+    map: string;
+    morteEm: number;
+    por?: string;
+    precisao?: 'exata' | 'estimada';
+  }>;
   /** Chaves `mvpId@map` que a guilda tirou da frente. */
   despriorizados: string[];
 }
@@ -106,7 +112,7 @@ export function GuildCliente({ slug }: { slug: string }) {
             ...d,
             timers: [
               ...d.timers.filter((t) => !(t.mvpId === mvpId && t.map === map)),
-              { mvpId, map, morteEm, por: apelido || undefined },
+              { mvpId, map, morteEm, por: apelido || undefined, precisao: 'exata' as const },
             ],
           }
         : d
@@ -250,6 +256,7 @@ export function GuildCliente({ slug }: { slug: string }) {
       map: t.map,
       morteEm: t.morteEm,
       por: t.por,
+      precisao: t.precisao,
     };
   }
 

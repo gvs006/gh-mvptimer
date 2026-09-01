@@ -45,6 +45,12 @@ export function MvpCard({
   const j = registro ? calcular(registro.morteEm, spawn.respawnMinMs, spawn.respawnMaxMs, agora) : null;
   const e = j ? ESTILO[j.fase] : null;
 
+  /* Horário que ninguém conferiu: veio de um túmulo AVISTADO, e a única coisa
+     que ele prova é que o MVP morreu em ALGUM momento antes daquilo — pode ter
+     sido três horas antes. A contagem existe, mas é chute, e mostrá-la com a
+     mesma cara de um horário conferido é o que faz alguém viajar à toa. */
+  const estimado = registro?.precisao === 'estimada';
+
   function confirmar() {
     const ts = horaParaTimestamp(texto);
     if (ts === null) return setErro(true);
@@ -136,6 +142,9 @@ export function MvpCard({
               className="font-mono text-xl leading-none font-semibold tabular-nums sm:text-2xl"
               style={{ color: e.cor }}
             >
+              {/* O "~" fica colado no número porque é ali que o olho vai: um
+                  aviso no rodapé do card seria lido depois da decisão. */}
+              {estimado && <span className="opacity-70">~</span>}
               {j.fase === 'contando' || j.fase === 'iminente'
                 ? formatarDuracao(j.faltaParaMin)
                 : formatarDuracao(-j.faltaParaMin)}
@@ -146,17 +155,27 @@ export function MvpCard({
             {e.rotulo}
           </div>
 
-          <BarraProgresso
-            morteEm={registro!.morteEm}
-            spawnMin={j.spawnMin}
-            spawnMax={j.spawnMax}
-            agora={agora}
-            cor={e.cor}
-          />
+          {estimado && (
+            <div className="rounded-md border border-dashed border-[var(--color-iminente)]/60 bg-[var(--color-iminente)]/10 px-2 py-1 text-[11px] leading-snug text-[var(--color-iminente)]">
+              Horário <b>não confirmado</b> — o bot só viu o túmulo. A morte foi
+              antes disso. Clique no túmulo no jogo, ou corrija em hh:mm.
+            </div>
+          )}
+
+          <div className={estimado ? 'opacity-60' : undefined}>
+            <BarraProgresso
+              morteEm={registro!.morteEm}
+              spawnMin={j.spawnMin}
+              spawnMax={j.spawnMax}
+              agora={agora}
+              cor={e.cor}
+            />
+          </div>
 
           <div className="flex items-center justify-between gap-2 text-[11px] text-[var(--color-suave)]">
             <span className="truncate">
-              † {formatarHora(registro!.morteEm)} · janela {formatarHora(j.spawnMin)}
+              {estimado ? 'túmulo visto' : '†'} {formatarHora(registro!.morteEm)} · janela{' '}
+              {formatarHora(j.spawnMin)}
               {j.spawnMax > j.spawnMin && `–${formatarHora(j.spawnMax)}`}
             </span>
             {registro!.por && <span className="shrink-0 truncate">por {registro!.por}</span>}

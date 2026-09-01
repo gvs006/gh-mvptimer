@@ -14,6 +14,9 @@ export interface Registro {
   /* Quem registrou. Ainda não há backend, então é só o apelido local — mas o
      campo já existe para a sincronização não ter que migrar dado depois. */
   por?: string;
+  /** 'estimada' = ninguém viu a morte; o horário é o de quando o túmulo foi
+      avistado, e a morte foi em algum momento ANTES disso. */
+  precisao?: 'exata' | 'estimada';
 }
 
 interface Estado {
