@@ -32,7 +32,24 @@ um MVP no meio. A proteção é o filtro, não a observação.
 ## Guilda de teste
 
 ```
-/g/zz-teste     membro: ifrit-farao-farao-11
+/g/zz-teste
 ```
 
-O `zz-` no começo mantém ela no fim do seletor da home, longe das reais.
+**As senhas não ficam aqui.** Este repositório é público, e senha em README é
+senha vazada — mesmo a de uma guilda descartável, porque quem achar pode
+escrever nela e sujar os testes de outra pessoa.
+
+Elas ficam em `.env.local.testes`, que o `.gitignore` cobre. Para (re)definir:
+
+```bash
+npm run guild:senha -- zz-teste membro "<uma senha>"
+npm run guild:senha -- zz-teste admin  "<outra senha>"
+```
+
+> Nota histórica: a primeira versão deste arquivo trazia a senha de membro no
+> texto e foi commitada assim. Aquela senha já foi trocada e não vale mais, mas
+> continua no histórico do git — motivo de sobra para não repetir.
+
+O prefixo `zz-` a mantém **fora** do seletor da home (`/api/guilds` filtra por
+ele). Ela continua existindo e acessível pela URL direta — que é o que os
+testes usam —, só não aparece para quem é jogador de verdade.

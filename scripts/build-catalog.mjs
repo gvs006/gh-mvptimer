@@ -20,11 +20,21 @@
      3. data/custom-servers.json Servidor privado. Customiza respawn e às vezes
                                  solta MVP que no oficial é de instância.
 
-   Conferido antes de escolher a precedência: 29 dos 37 MVPs coincidem exato
-   entre 1 e 2. As divergências são de MAPA, quase todas nos calabouços de
-   guild (gld_dun01-04), onde cada servidor rotaciona MVP de um jeito — não são
-   divergências de tempo. Por isso a união de mapas é segura, e onde os dois
-   descrevem o mesmo mapa vale a camada 2, que é curada por jogador.
+   PRECEDÊNCIA, e por que ela mudou:
+
+   No mesmo mapa, quem manda no TEMPO é o rAthena (camada 1). A referência só
+   acrescenta: MVP que a camada 1 não vê, e mapa que ela não lista.
+
+   A primeira versão deixava a referência ganhar, por ser "curada por jogador".
+   Errado, e mediível: das 37 comparações, 29 são idênticas e 2 divergem em
+   tempo — Kiel D-01 e Wounded Morocc. Nos dois, o rAthena pre-re traz uma
+   janela aleatória de 1h (`delay2` 3600000) e a referência traz 10min, que é o
+   valor do RE. Conferido no RateMyServer em pre-renewal: Kiel em kh_dun02 é
+   "120~180 min", o que confirma o rAthena e derruba a referência.
+
+   O resto das divergências é de MAPA, quase todas nos calabouços de guilda
+   (gld_dun01-04), onde cada servidor rotaciona MVP de um jeito. Por isso a
+   união de mapas continua, e só a decisão de tempo inverteu.
    ========================================================================= */
 
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -95,9 +105,10 @@ function montar(modo) {
         continue;
       }
 
-      /* União por mapa; onde os dois falam do mesmo, a referência ganha. */
+      /* União por mapa, mas o tempo do rAthena PERMANECE onde já existe: a
+         referência só acrescenta mapa que a camada 1 não tinha. */
       const porMapa = new Map(existente.spawns.map((s) => [s.map, s]));
-      for (const s of novos) porMapa.set(s.map, s);
+      for (const s of novos) if (!porMapa.has(s.map)) porMapa.set(s.map, s);
       existente.spawns = [...porMapa.values()];
       existente.namePtBr ??= r.name;
     }

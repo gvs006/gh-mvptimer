@@ -17,6 +17,18 @@
             }
           ],
           "_nota": "Custom deste servidor: 4h fixas. No rAthena oficial o 2022 é de instância e não tem respawn livre."
+        },
+        {
+          "id": 1708,
+          "namePtBr": "Memória de Thanatos",
+          "respawn": [
+            {
+              "map": "thana_boss",
+              "cdr": 14400000,
+              "max_delay": 0
+            }
+          ],
+          "_nota": "Custom deste servidor: 4h fixas no topo da Torre de Thanatos, liberado sem quest. No rAthena oficial o 1708 so aparece dentro da instancia do Laboratorio Central e nao tem respawn livre. O Divine Pride nao tem arte para thana_boss (vem em branco), entao o card fica sem minimapa."
         }
       ]
     }

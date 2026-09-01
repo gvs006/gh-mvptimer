@@ -12,7 +12,7 @@
           "map": "mjolnir_04",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun02",
@@ -34,7 +34,7 @@
           "map": "moc_pryd06",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -100,25 +100,25 @@
           "map": "ra_fild03",
           "respawnMinMs": 10800000,
           "respawnMaxMs": 11400000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "ra_fild04",
           "respawnMinMs": 18000000,
           "respawnMaxMs": 18600000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "ve_fild01",
           "respawnMinMs": 10800000,
           "respawnMaxMs": 11400000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "ve_fild02",
           "respawnMinMs": 21600000,
           "respawnMaxMs": 22200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -134,7 +134,7 @@
           "map": "prt_maze03",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun03",
@@ -172,7 +172,7 @@
           "map": "prt_sewb4",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -188,7 +188,7 @@
           "map": "abbey02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -204,7 +204,7 @@
           "map": "bra_dun02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -220,7 +220,7 @@
           "map": "xmas_dun02",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -236,7 +236,7 @@
           "map": "abyss_03",
           "respawnMinMs": 10800000,
           "respawnMaxMs": 11400000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -274,7 +274,7 @@
           "map": "gef_dun02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun02",
@@ -302,7 +302,7 @@
           "map": "gef_dun01",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -318,7 +318,7 @@
           "map": "treasure02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -362,7 +362,7 @@
           "map": "lhz_dun02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -378,7 +378,7 @@
           "map": "in_sphinx5",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -394,7 +394,7 @@
           "map": "pay_dun04",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun01",
@@ -416,7 +416,7 @@
           "map": "moc_fild17",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -432,7 +432,7 @@
           "map": "tur_dun04",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -482,7 +482,7 @@
           "map": "mosk_dun03",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -498,7 +498,7 @@
           "map": "xmas_fild01",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -514,7 +514,7 @@
           "map": "thor_v03",
           "respawnMinMs": 39600000,
           "respawnMaxMs": 40200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -529,8 +529,8 @@
         {
           "map": "kh_dun02",
           "respawnMinMs": 7200000,
-          "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "respawnMaxMs": 10800000,
+          "source": "rathena"
         }
       ]
     },
@@ -562,7 +562,7 @@
           "map": "lou_dun03",
           "respawnMinMs": 7000000,
           "respawnMaxMs": 7600000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -578,7 +578,7 @@
           "map": "ayo_dun02",
           "respawnMinMs": 25200000,
           "respawnMaxMs": 25800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -594,7 +594,7 @@
           "map": "anthell02",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun03",
@@ -631,8 +631,8 @@
         {
           "map": "moc_fild22",
           "respawnMinMs": 43200000,
-          "respawnMaxMs": 43800000,
-          "source": "referencia"
+          "respawnMaxMs": 46800000,
+          "source": "rathena"
         }
       ]
     },
@@ -648,13 +648,13 @@
           "map": "gef_fild02",
           "respawnMinMs": 86400000,
           "respawnMaxMs": 87000000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gef_fild14",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -670,7 +670,7 @@
           "map": "moc_pryd04",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -686,7 +686,7 @@
           "map": "ra_san05",
           "respawnMinMs": 18000000,
           "respawnMaxMs": 18600000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -702,7 +702,7 @@
           "map": "ein_dun02",
           "respawnMinMs": 7500000,
           "respawnMaxMs": 8100000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -718,7 +718,7 @@
           "map": "ama_dun03",
           "respawnMinMs": 5460000,
           "respawnMaxMs": 6060000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -734,7 +734,7 @@
           "map": "gl_chyard",
           "respawnMinMs": 3600000,
           "respawnMaxMs": 4200000,
-          "source": "referencia"
+          "source": "rathena"
         },
         {
           "map": "gld_dun04",
@@ -756,7 +756,7 @@
           "map": "gef_fild10",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -772,7 +772,7 @@
           "map": "gon_dun03",
           "respawnMinMs": 5650000,
           "respawnMaxMs": 6250000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -788,7 +788,7 @@
           "map": "beach_dun",
           "respawnMinMs": 18000000,
           "respawnMaxMs": 18600000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -804,7 +804,7 @@
           "map": "odin_tem03",
           "respawnMinMs": 28800000,
           "respawnMaxMs": 29400000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -820,7 +820,7 @@
           "map": "jupe_core",
           "respawnMinMs": 7200000,
           "respawnMaxMs": 7800000,
-          "source": "referencia"
+          "source": "rathena"
         }
       ]
     },
@@ -1877,7 +1877,7 @@
               "map": "mjolnir_04",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun02",
@@ -1899,7 +1899,7 @@
               "map": "moc_pryd06",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -1965,25 +1965,25 @@
               "map": "ra_fild03",
               "respawnMinMs": 10800000,
               "respawnMaxMs": 11400000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "ra_fild04",
               "respawnMinMs": 18000000,
               "respawnMaxMs": 18600000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "ve_fild01",
               "respawnMinMs": 10800000,
               "respawnMaxMs": 11400000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "ve_fild02",
               "respawnMinMs": 21600000,
               "respawnMaxMs": 22200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -1999,7 +1999,7 @@
               "map": "prt_maze03",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun03",
@@ -2037,7 +2037,7 @@
               "map": "prt_sewb4",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2053,7 +2053,7 @@
               "map": "abbey02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2069,7 +2069,7 @@
               "map": "bra_dun02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2085,7 +2085,7 @@
               "map": "xmas_dun02",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2101,7 +2101,7 @@
               "map": "abyss_03",
               "respawnMinMs": 10800000,
               "respawnMaxMs": 11400000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2139,7 +2139,7 @@
               "map": "gef_dun02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun02",
@@ -2167,7 +2167,7 @@
               "map": "gef_dun01",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2183,7 +2183,7 @@
               "map": "treasure02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2227,7 +2227,7 @@
               "map": "lhz_dun02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2243,7 +2243,7 @@
               "map": "in_sphinx5",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2259,7 +2259,7 @@
               "map": "pay_dun04",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun01",
@@ -2281,7 +2281,7 @@
               "map": "moc_fild17",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2297,7 +2297,7 @@
               "map": "tur_dun04",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2347,7 +2347,7 @@
               "map": "mosk_dun03",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2363,7 +2363,7 @@
               "map": "xmas_fild01",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2379,7 +2379,7 @@
               "map": "thor_v03",
               "respawnMinMs": 39600000,
               "respawnMaxMs": 40200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2394,8 +2394,8 @@
             {
               "map": "kh_dun02",
               "respawnMinMs": 7200000,
-              "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "respawnMaxMs": 10800000,
+              "source": "rathena"
             }
           ]
         },
@@ -2427,7 +2427,7 @@
               "map": "lou_dun03",
               "respawnMinMs": 7000000,
               "respawnMaxMs": 7600000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2443,7 +2443,7 @@
               "map": "ayo_dun02",
               "respawnMinMs": 25200000,
               "respawnMaxMs": 25800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2459,7 +2459,7 @@
               "map": "anthell02",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun03",
@@ -2486,6 +2486,22 @@
           ]
         },
         {
+          "id": 1708,
+          "aegis": "THANATOS",
+          "name": "Memory of Thanatos",
+          "level": 99,
+          "hp": 445660,
+          "namePtBr": "Memória de Thanatos",
+          "spawns": [
+            {
+              "map": "thana_boss",
+              "respawnMinMs": 14400000,
+              "respawnMaxMs": 14400000,
+              "source": "custom"
+            }
+          ]
+        },
+        {
           "id": 1917,
           "aegis": "MOROCC_",
           "name": "Wounded Morocc",
@@ -2496,8 +2512,8 @@
             {
               "map": "moc_fild22",
               "respawnMinMs": 43200000,
-              "respawnMaxMs": 43800000,
-              "source": "referencia"
+              "respawnMaxMs": 46800000,
+              "source": "rathena"
             }
           ]
         },
@@ -2513,13 +2529,13 @@
               "map": "gef_fild02",
               "respawnMinMs": 86400000,
               "respawnMaxMs": 87000000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gef_fild14",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2535,7 +2551,7 @@
               "map": "moc_pryd04",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2551,7 +2567,7 @@
               "map": "ra_san05",
               "respawnMinMs": 18000000,
               "respawnMaxMs": 18600000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2567,7 +2583,7 @@
               "map": "ein_dun02",
               "respawnMinMs": 7500000,
               "respawnMaxMs": 8100000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2583,7 +2599,7 @@
               "map": "ama_dun03",
               "respawnMinMs": 5460000,
               "respawnMaxMs": 6060000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2599,7 +2615,7 @@
               "map": "gl_chyard",
               "respawnMinMs": 3600000,
               "respawnMaxMs": 4200000,
-              "source": "referencia"
+              "source": "rathena"
             },
             {
               "map": "gld_dun04",
@@ -2621,7 +2637,7 @@
               "map": "gef_fild10",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2637,7 +2653,7 @@
               "map": "gon_dun03",
               "respawnMinMs": 5650000,
               "respawnMaxMs": 6250000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2669,7 +2685,7 @@
               "map": "beach_dun",
               "respawnMinMs": 18000000,
               "respawnMaxMs": 18600000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2685,7 +2701,7 @@
               "map": "odin_tem03",
               "respawnMinMs": 28800000,
               "respawnMaxMs": 29400000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },
@@ -2701,7 +2717,7 @@
               "map": "jupe_core",
               "respawnMinMs": 7200000,
               "respawnMaxMs": 7800000,
-              "source": "referencia"
+              "source": "rathena"
             }
           ]
         },

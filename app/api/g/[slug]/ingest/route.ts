@@ -37,20 +37,63 @@ function tokenConfere(recebido: string, guardado: string): boolean {
   return a.length === b.length && timingSafeEqual(a, b);
 }
 
-/* O finder conhece o mob pelo job id e pelo nome do cliente; o catálogo é a
-   ponte para o id que o timer usa. */
-function acharMvp(modo: 'pre-re' | 're', mvpId?: number, nome?: string) {
-  const lista = (catalogo as never as Record<string, Array<{ id: number; name: string; namePtBr: string | null; spawns: Array<{ map: string }> }>>)[modo];
+type MvpCat = {
+  id: number;
+  name: string;
+  namePtBr: string | null;
+  spawns: Array<{ map: string }>;
+};
+
+/* A lápide NÃO diz de quem ela é.
+
+   No rAthena o NPC do túmulo se chama literalmente "Túmulo" (msg 656) para
+   todos os MVPs — `mvptomb_create` copia um texto fixo. O nome do morto só
+   existe no ponteiro interno do servidor e só sai pelo `run_tomb`, quando
+   alguém clica.
+
+   Mas o MAPA quase sempre resolve: dos 56 mapas do catálogo, 48 têm um único
+   MVP possível. Uma lápide em beach_dun só pode ser do Tao Gunka. Os 8
+   ambíguos são calabouços de guilda e os mapas de Angeling/Ghostring/Deviling
+   — nesses, sem clicar no túmulo não há como saber, e chutar colocaria o timer
+   errado na tela. */
+function acharMvp(
+  modo: 'pre-re' | 're',
+  mvpId?: number,
+  nome?: string,
+  map?: string
+): { mvp: MvpCat } | { erro: string } {
+  const lista = (catalogo as never as Record<string, MvpCat[]>)[modo];
+
   if (mvpId) {
     const porId = lista.find((m) => m.id === mvpId);
-    if (porId) return porId;
+    if (porId) return { mvp: porId };
   }
-  if (!nome) return null;
-  const alvo = nome.trim().toLowerCase();
-  return (
-    lista.find((m) => m.name.toLowerCase() === alvo || m.namePtBr?.toLowerCase() === alvo) ?? null
-  );
+
+  if (nome) {
+    const alvo = nome.trim().toLowerCase();
+    const porNome = lista.find(
+      (m) => m.name.toLowerCase() === alvo || m.namePtBr?.toLowerCase() === alvo
+    );
+    if (porNome) return { mvp: porNome };
+  }
+
+  /* Sem nome utilizável: deduz pelo mapa. */
+  if (map) {
+    const noMapa = lista.filter((m) => m.spawns.some((sp) => sp.map === map));
+    if (noMapa.length === 1) return { mvp: noMapa[0] };
+    if (noMapa.length > 1) {
+      const nomes = noMapa.map((m) => m.namePtBr ?? m.name).join(', ');
+      return { erro: `${map} tem mais de um MVP (${nomes}) — clique no túmulo para saber qual.` };
+    }
+  }
+
+  return { erro: `MVP desconhecido: ${nome ?? mvpId ?? 'sem nome'} em ${map ?? 'sem mapa'}` };
 }
+
+/* O NPC da lápide tem nome fixo por idioma. Recebê-lo é o mesmo que não
+   receber nome nenhum — e deixar passar faria a busca por nome falhar e a
+   dedução por mapa nunca acontecer. */
+const NOMES_DE_LAPIDE = new Set(['tumulo', 'túmulo', 'tomb']);
 
 export async function POST(req: Request, ctx: { params: Promise<{ slug: string }> }) {
   const { slug } = await ctx.params;
@@ -66,16 +109,16 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
   const c = (await req.json().catch(() => null)) as Corpo | null;
   if (!c?.map) return NextResponse.json({ erro: 'map obrigatório.' }, { status: 400 });
 
-  const mvp = acharMvp(guild.mode, c.mvpId, c.nome);
-  if (!mvp) {
-    /* 422 e não 500: o payload está bem formado, o MVP é que não está no
-       catálogo (mob custom do servidor). Diferenciar deixa o log do finder
-       útil em vez de ruidoso. */
-    return NextResponse.json(
-      { erro: `MVP desconhecido: ${c.nome ?? c.mvpId}` },
-      { status: 422 }
-    );
+  const nome = c.nome && NOMES_DE_LAPIDE.has(c.nome.trim().toLowerCase()) ? undefined : c.nome;
+  const achado = acharMvp(guild.mode, c.mvpId, nome, c.map);
+
+  if ('erro' in achado) {
+    /* 422 e não 500: o payload está bem formado, o MVP é que não dá para
+       identificar. Diferenciar deixa o log do finder útil em vez de ruidoso. */
+    return NextResponse.json({ erro: achado.erro }, { status: 422 });
   }
+
+  const mvp = achado.mvp;
   if (!mvp.spawns.some((s) => s.map === c.map)) {
     return NextResponse.json(
       { erro: `${mvp.name} não nasce em ${c.map} neste catálogo.` },

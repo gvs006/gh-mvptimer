@@ -10,3 +10,6 @@ CLAUDE.md
 
 # Notas de trabalho, ficam so na maquina
 docs/
+
+# Senhas da guilda de sandbox
+.env.local.testes
