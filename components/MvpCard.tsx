@@ -47,8 +47,12 @@ export function MvpCard({
 
   /* Horário que ninguém conferiu: veio de um túmulo AVISTADO, e a única coisa
      que ele prova é que o MVP morreu em ALGUM momento antes daquilo — pode ter
-     sido três horas antes. A contagem existe, mas é chute, e mostrá-la com a
-     mesma cara de um horário conferido é o que faz alguém viajar à toa. */
+     sido três horas antes.
+
+     Sinalizado de leve, sem caixa de aviso: um bloco de texto em cada card
+     estimado vira ruído e some do olhar em duas horas de uso. O "~" colado no
+     número, a barra esmaecida e o "túmulo visto" no lugar da cruz bastam para
+     não confundir com horário conferido, e não atrapalham quem já entendeu. */
   const estimado = registro?.precisao === 'estimada';
 
   function confirmar() {
@@ -154,13 +158,6 @@ export function MvpCard({
           <div className="text-xs font-medium" style={{ color: e.cor }}>
             {e.rotulo}
           </div>
-
-          {estimado && (
-            <div className="rounded-md border border-dashed border-[var(--color-iminente)]/60 bg-[var(--color-iminente)]/10 px-2 py-1 text-[11px] leading-snug text-[var(--color-iminente)]">
-              Horário <b>não confirmado</b> — o bot só viu o túmulo. A morte foi
-              antes disso. Clique no túmulo no jogo, ou corrija em hh:mm.
-            </div>
-          )}
 
           <div className={estimado ? 'opacity-60' : undefined}>
             <BarraProgresso
