@@ -56,13 +56,16 @@ type MvpCat = {
    ambíguos são calabouços de guilda e os mapas de Angeling/Ghostring/Deviling
    — nesses, sem clicar no túmulo não há como saber, e chutar colocaria o timer
    errado na tela. */
+/* Recebe o CATALOGO ja resolvido, nao o modo: a guilda pode estar num servidor
+   customizado, e ali vivem MVPs que o catalogo puro do modo não tem (a Sombra
+   de Nidhogg e a Memória de Thanatos do ThanatosRO). Usar o modo aqui fazia o
+   finder nunca conseguir registrar justamente os customizados. */
 function acharMvp(
-  modo: 'pre-re' | 're',
+  lista: MvpCat[],
   mvpId?: number,
   nome?: string,
   map?: string
 ): { mvp: MvpCat } | { erro: string } {
-  const lista = (catalogo as never as Record<string, MvpCat[]>)[modo];
 
   if (mvpId) {
     const porId = lista.find((m) => m.id === mvpId);
@@ -95,6 +98,13 @@ function acharMvp(
    dedução por mapa nunca acontecer. */
 const NOMES_DE_LAPIDE = new Set(['tumulo', 'túmulo', 'tomb']);
 
+/* O pacote de troca de mapa do RO traz o nome COM extensão ("beach_dun.gat"),
+   porque o rAthena a recoloca em `mapindex_getmapname_ext` antes de enviar. O
+   catálogo usa o nome sem ela. O finder já corta na origem; isto aqui é a rede
+   de segurança, para uma versão antiga dele não voltar a falhar em silêncio —
+   e para o erro, quando houver, não ser um 422 enigmático. */
+const semGat = (m: string) => (m.toLowerCase().endsWith('.gat') ? m.slice(0, -4) : m);
+
 export async function POST(req: Request, ctx: { params: Promise<{ slug: string }> }) {
   const { slug } = await ctx.params;
 
@@ -108,9 +118,20 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
 
   const c = (await req.json().catch(() => null)) as Corpo | null;
   if (!c?.map) return NextResponse.json({ erro: 'map obrigatório.' }, { status: 400 });
+  const map = semGat(c.map);
 
   const nome = c.nome && NOMES_DE_LAPIDE.has(c.nome.trim().toLowerCase()) ? undefined : c.nome;
-  const achado = acharMvp(guild.mode, c.mvpId, nome, c.map);
+  /* Mesma resolução da tela da guilda: servidor customizado manda, e sem ele
+     vale o catálogo puro do modo. */
+  const dados = catalogo as never as {
+    'pre-re': MvpCat[];
+    re: MvpCat[];
+    servers: Array<{ id: string; mvps: MvpCat[] }>;
+  };
+  const lista =
+    dados.servers.find((sv) => sv.id === guild.server_id)?.mvps ?? dados[guild.mode];
+
+  const achado = acharMvp(lista, c.mvpId, nome, map);
 
   if ('erro' in achado) {
     /* 422 e não 500: o payload está bem formado, o MVP é que não dá para
@@ -119,9 +140,9 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
   }
 
   const mvp = achado.mvp;
-  if (!mvp.spawns.some((s) => s.map === c.map)) {
+  if (!mvp.spawns.some((s) => s.map === map)) {
     return NextResponse.json(
-      { erro: `${mvp.name} não nasce em ${c.map} neste catálogo.` },
+      { erro: `${mvp.name} não nasce em ${map} neste catálogo.` },
       { status: 422 }
     );
   }
@@ -138,7 +159,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
     .select('precision')
     .eq('guild_id', guild.id)
     .eq('mvp_id', mvp.id)
-    .eq('map', c.map)
+    .eq('map', map)
     .maybeSingle();
 
   if (atual?.precision === 'exata' && precisao === 'estimada') {
@@ -151,7 +172,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
       {
         guild_id: guild.id,
         mvp_id: mvp.id,
-        map: c.map,
+        map,
         death_at: new Date(morte).toISOString(),
         coord_x: null,
         coord_y: null,
@@ -168,7 +189,7 @@ export async function POST(req: Request, ctx: { params: Promise<{ slug: string }
   return NextResponse.json({
     ok: true,
     mvp: mvp.namePtBr ?? mvp.name,
-    map: c.map,
+    map,
     morteEm: morte,
     precisao,
   });
